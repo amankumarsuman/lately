@@ -1,0 +1,908 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#first-main-cont {
+    width: 1519.2px;
+    height: 466.175px;
+    background-color: #174C43;
+    padding: 60px 15% 60px 15%;
+    display: block;
+    box-sizing: border-box;
+}
+#first-small-cont {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    box-sizing: border-box;
+    border: 1px solid #174C43;
+    grid-template: "leftbox rightbox";
+    grid-template-columns: 50% 50%;
+}
+#small-left-box{
+grid-area: leftbox;
+/* width: 100%;
+height: 100%; */
+border: 1px solid #174C43;;
+}
+
+#small-right-box {
+grid-area: rightbox;
+/* width: 100%;
+height: 100%; */
+border: 1px solid #174C43;;
+}
+
+#small-right-box > img {
+    width: 100%;
+    height: 100%;
+}
+
+#small-left-box > h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 40px;
+    line-height: 44px;
+    text-decoration: none solid rgb(255, 255, 255);
+    color: #FFFFFF;
+}
+
+#small-left-box > h1 strong {
+    color: #00C66B;
+}
+
+#small-left-box > .normal-text {
+    color: white;
+    font-size: 22px;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+}
+
+#small-left-box > a {
+    position: static;
+    margin-top: 27px;
+    padding: 9px 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00c66b;
+    border-radius: 4px;
+    /* background-color: transparent; */
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    /* display: inline-block;
+    color: white;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer; */
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button:hover {
+    /* color: #00c66b; */
+    background-color: #00c66b;
+}
+
+#logo-cont {
+    width: 1519.2px;
+    border: 1px solid white;
+    display: block;
+    box-sizing: border-box;
+    padding: 0px 15% 0px 15%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.logo-inside-box {
+    display: grid;
+    width: 100%;
+    border: 1px solid white;
+    justify-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+}
+
+.logo-inside-box > img {
+    width: 100%;
+}
+
+#third-main-cont {
+    width: 1519.2px;
+    background-color: #E8F8F2;
+    padding: 30px 15% 10px 15%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.third-tex-box {
+    width: 100%;
+    border: 1px solid #E8F8F2;
+    display: block;
+    box-sizing: border-box;
+    padding: 0% 16% 0% 16%;
+}
+
+.third-tex-box > h1 {
+    display: block;
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: ProximaNova, sans-serif;
+    color: #133d36;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.third-tex-box > p {
+    display: block;
+    margin-right: 56px;
+    margin-bottom: 0px;
+    margin-left: 56px;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    color: #5f5f5f;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+.third-image-box {
+    width: 100%;
+    border: 1px solid #E8F8F2;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.third-image-box > img {
+    width: 100%;
+}
+
+#fourth-main-cont {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #fff;
+    display: block;
+    box-sizing: border-box;
+    width: 1519.2px;
+    border: 1px solid white;
+}
+
+.fourth-first-div{
+    width: 100%;
+    border: 1px solid white;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 20% 0 20%;
+}
+
+.fourth-first-div > h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    text-decoration: non solid rgb(19, 61, 54);
+    text-align: center;
+    word-spacing: 0px;
+}
+
+.fourth-first-div > p {
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: non solid rgb(95, 95, 95);
+    text-align: center;
+}
+
+.fourth-second-div {
+    display: grid;
+    width: 100%;
+    border: 1px solid white;
+    /* display: block; */
+    box-sizing: border-box;
+    grid-template: "fbox sbox tbox fobox";
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-column-gap: 1%; */
+}
+
+.fourth-second-div > .fbox {
+    grid-area: fbox;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 2% 2% 0% 2%;
+}
+
+.fourth-second-div > .sbox {
+    grid-area: sbox;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 2% 2% 0% 2%;
+}
+
+.fourth-second-div > .tbox {
+    grid-area: tbox;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 2% 2% 0% 2%;
+}
+
+.fourth-second-div > .fobox {
+    grid-area: fobox;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 2% 2% 0% 2%;
+}
+
+.fourth-img {
+    width: 60%;
+    margin-top: 0px;
+    padding-right: 20%;
+    padding-bottom: 0;
+    padding-left: 20%;
+}
+
+.fourth-h3 {
+    font-family: ProximaNova, sans-serif;
+    color: #133d36;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.fourth-p {
+    text-align: center;
+    line-height: 1.5em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none solid #889492;
+}
+
+#fifth-main-cont {
+    width: 1519.2px;
+    background-color: #E8F8F2;
+    padding: 7% 15% 7% 15%;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #E8F8F2;
+}   
+
+.fifth-inner-cont {
+    border: 1px solid #E8F8F2;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.fifth-inner-cont > h1 {
+    margin-top: 0px;
+    font-family: ProximaNova, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #174c43;
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+
+.fifth-link-box {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.fifth-link-box > a {
+    max-width: 100%;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    color: #00c66b;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
+    -webkit-text-size-adjust: 100%;
+}
+
+.fifth-link-box > a > span {
+    font-family: ProximaNova, sans-serif;
+    color: #00c66b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#sixth-main-div {
+    width: 1519.2px;
+    background-color: #174C43;
+    padding: 1.5% 15% 4% 15%;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #174C43;
+    display: block;
+    box-sizing: border-box;
+}
+
+.sixth-text-box {
+    border: 1px solid #174C43;
+    width: 100%;
+    display: block;
+    padding-top: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    font-family: 'Mark simonson proxima nova a it', sans-serif;
+    color: #fff;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: 300;
+    /* text-align: left; */
+    display: block;
+    box-sizing: border-box;
+    font-style: italic;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.sixth-img-box {
+    max-width: 100%;
+    border: 1px solid #174C43;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: 1.5%;
+}
+
+.sixth-img-box > img {
+    width: 8%;
+    position: static;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    display: inline-block;
+    width: 8%;
+    height: auto;
+    max-width: none;
+    margin: -140px auto 0px;
+    object-fit: fill;
+}
+
+.sixth-third-box {
+    width: 100%;
+    border: 1px solid #174C43;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+}
+
+.sixth-third-sub-box {
+    display: grid;
+    width: 100%;
+    border: 1px solid #174C43;
+    box-sizing: border-box;
+    grid-template: "one two three";
+    grid-template-columns: 15% 45% 40%;
+}
+
+.one {
+    grid-area: one;
+    border: 1px solid #174C43;
+    box-sizing: border-box;
+}
+
+.two {
+    grid-area: two;
+    border: 1px solid #174C43;
+    box-sizing: border-box;
+}
+
+.three {
+    grid-area: three;
+    border: 1px solid #174C43;
+    box-sizing: border-box;
+}
+
+.one > img {
+    width: 100%;
+    border-radius: 5em;
+}
+
+.two > .first-line {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    line-height: 20px;
+    margin-left: 6%;
+    padding-top: 12%
+}
+
+.two > .second-line {
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    line-height: 20px;
+    margin-left: 6%;
+}
+
+.three > img {
+    width: 60%;
+    padding-left: 40%;
+    padding-top: 16%;
+}
+
+#seventh-main-cont {
+    width: 1519.2px;
+    background-color: white;
+    padding: 35px 15% 60px 15%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.seventh-sub-cont {
+    display: grid;
+    width: 100%;
+    border: 1px solid white;
+    grid-template: "leftbox rightbox";
+    grid-template-columns: 50% 50%;
+}
+
+.seventh-sub-cont > .left-box {
+    grid-area: leftbox;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding-right: 15%;
+}
+
+.seventh-sub-cont > .right-box {
+    grid-area: rightbox;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding-top: 6%;
+}
+
+.left-box > h2 {
+    margin-top: 0px;
+    font-family: ProximaNova, sans-serif;
+    color: #133d36;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.left-box span {
+    color: #00c66b;
+}
+
+.left-box > p {
+    display: block;
+    margin-bottom: 12px;
+    color: #5f5f5f;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.left-box > ul {
+    margin-bottom: 20px;
+    padding-left: 0px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5f5f5f;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+.left-box > a {
+    width: auto;
+    display: inline-block;
+    /* margin-top: 0px; */
+    /* margin-bottom: 0px;
+    margin-left: 0px; */
+    padding-right: 25px;
+    padding-left: 25px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    align-self: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00c66b;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #00c66b;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    object-fit: fill;
+    padding: 9px 15px;
+    border: 1;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+}
+
+.left-box > a:hover {
+    background-color: #00c66b;
+    color: white;
+}
+
+.right-box > img {
+    width: 100%;
+}
+
+#eight-main-cont {
+    width: 1519.2px;
+    height: 466px;
+    padding: 64px 15% 64px 15%;
+    background-color: #e6f6ef;
+    background-image: url(https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdfe822430ea00d37a9d86_square_pattern_3.png);
+    background-position: 50% 132%;
+    background-size: auto 50%;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #e6f6ef;
+}
+
+.eight-sub-cont {
+    display: grid;
+    width: 100%;
+    border: 1px solid #e6f6ef;
+    grid-template: "leftbox rightbox";
+    grid-template-columns: 50% 50%;
+}
+
+.eight-left-box {
+    grid-area: leftbox;
+    border: 1px solid black;
+    height: 42vh;
+    box-shadow: 1px 1px 20px;
+}
+
+.eight-right-box {
+    grid-area: rightbox;
+    border: 1px solid #e6f6ef;
+}
+
+.eight-left-box > iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.eight-right-box > h1 {
+    margin-top: 0px;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    padding-top: 4%;
+    font-family: ProximaNova, sans-serif;
+    color: #133d36;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.eigth-link-box {
+    display: block;
+    text-transform: uppercase;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    padding-top: 3%;
+}
+
+.eight-demo {
+    margin-right: 10px;
+    padding: 9px 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00c66b;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #00c66b;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    text-decoration: none;
+    margin-left: 8%;
+}
+
+.eight-youtube-link {
+    padding: 9px 25px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00c66b;
+    border-radius: 4px;
+    background-color: #174c43;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.eight-demo:hover {
+background-color: #00c66b;
+color: white;
+}
+
+.eight-youtube-link:hover {
+    background-color: #00c66b;
+}
+
+
+#footer {
+    width: 1519.2px;
+    background-color: white;
+    padding: 30px 15% 30px 15%;
+    display: block;
+    box-sizing: border-box; 
+}
+
+.footer-sub-cont {
+    display: grid;
+    width: 100;
+    border: 1px solid white;
+    grid-template: "box1 box2 box3 box4";
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.box-1 {
+    grid-area: box1;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.box-2 {
+    grid-area: box2;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.box-3 {
+    grid-area: box3;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.box-4 {
+    grid-area: box4;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.h5 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: ProximaNova, sans-serif;
+    color: #7d7d7d;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    color: #5f5f5f;
+    font-size: 16px;
+    line-height: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+}
+
+.list {
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    display: list-item;
+    text-align: left;
+    list-style: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+}
+
+.footer-link {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Mark simonson proxima nova', sans-serif;
+    color: #7d7d7d;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    list-style: none;
+    line-height: 24px;
+    margin-left: -18%;
+}
+
+.link {
+    color: #7d7d7d;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.box-3 > div {
+    color: #5f5f5f;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.box-4 > div {
+    color: #5f5f5f;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer-link:hover {
+    color: #00c66b;
+}
+
+.link:hover {
+    color: #00c66b;
+}
+
+#ninth-logo-cont {
+    width: 1519.2px;
+    background-color: white;
+    padding: 0px 15% 0px 15%;
+    display: block;
+    box-sizing: border-box; 
+    border: 1px solid white;
+}
+
+#ninth-logo-cont > div {
+    display: grid;
+    width: 100%;
+    border: 1px solid white;
+    border-top: 4px solid #F7F7F7;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    grid-template: "one empty two three four five six seven eight nine";
+    grid-template-columns: 12% 55% 3% 3% 3% 3% 3% 3% 3% 3%;
+    grid-column-gap: 1%;
+
+}
+
+.logo-one {
+    grid-area: one;
+    border: 1px solid white;
+}
+
+.empty {
+    grid-area: empty;
+    border: 1px solid white;
+}
+
+.logo-two {
+    grid-area: two;
+    border: 1px solid white;
+}
+
+.logo-three {
+    grid-area: three;
+    border: 1px solid white;
+}
+
+.logo-four {
+    grid-area: four;
+    border: 1px solid white;
+}
+
+.logo-five {
+    grid-area: five;
+    border: 1px solid white;
+}
+
+.logo-six {
+    grid-area: six;
+    border: 1px solid white;
+}   
+
+.logo-seven {
+    grid-area: seven;
+    border: 1px solid white;
+}
+
+.logo-eight {
+    grid-area: eight;
+    border: 1px solid white;
+}
+
+.logo-nine {
+    grid-area: nine;
+    border: 1px solid white;
+}
+
+.logo-one img {
+    width: 100%;
+}
+
+#ninth-logo-cont > div img {
+    width: 100%;
+}
