@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="">
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            body{
+                font-family: 'Mark simonson proxima nova', sans-serif;
+            }
+            #leadership-cont{
+                background-image: linear-gradient(#113630,#174c43);
+                padding: 55px 0 55px 0;
+            }
+            .lately{
+                text-align: center;
+                color: white;
+            }
+            .lately h1{
+                font-size: 46px;
+                font-weight: 700;
+                line-height: 48px;
+            }
+            .lately p{
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 20px;
+            }
+            #wrapper{
+                margin-top: 50px;
+            }
+            #bio{
+                display: grid;
+                width: 75%;
+                margin: auto;
+                grid-template-columns: 30% 30% 30.5%;
+                row-gap: 3%;
+                column-gap: 5%;
+            }
+            #people{
+                box-shadow: 0 0 15px -4px #b8b8b8;
+                height: 400px;
+                border-radius: 10px;
+            }
+            #people:hover{
+                box-shadow: 0 0 15px -4px #797777; 
+            }
+            #people img{
+                width: 100%;
+                height: 200px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            #people div:nth-child(2){
+                margin: 20px 20px 0px 20px;
+                color: #174c43;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            #people div:nth-child(3){
+                padding: 20px;
+                color: #00c66b;
+                font-size: 16px;
+                line-height: 22px;
+            }
+            #div-btn{
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                width: 120px; 
+            }
+            #div-btn button:hover{
+                color: #00c66b;
+            }
+            button{
+                color: #333;
+                font-size: 14px;
+                padding: 9px 20px 9px 20px;
+                cursor: pointer;
+                border: 0.0001rem solid rgb(201, 197, 197);
+            }
+            #h1-div h1{
+                font-size: 42px;
+                line-height: 46px;
+                text-align: center;
+                padding-top: 80px;
+            }
+            #video-div{
+                width: 410px;
+                margin: auto;
+                margin-top: 40px;
+                padding-bottom: 80px;
+            }
+            #video-div button{
+                border: 2px solid #00c66b;
+                border-radius: 4px;
+            }
+            #video-div button:nth-child(1){
+                color:  #00c66b;
+                background-color: #fff;
+                font-size: 15px;
+            }
+            #video-div button:nth-child(1):hover{
+                background-color: #00c66b;
+                color: #fff;
+            }
+            #video-div a button:nth-child(1){
+                background-color: #174c43;
+                color: #fff;
+                font-size: 15px;
+            }
+            #video-div button:nth-child(2) a{
+                color: #fff;
+                text-decoration: none;
+            }
+            #video-div button:nth-child(2):hover{
+                background-color: #00c66b;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="leadership-cont">
+            <div class="lately">
+                <h1>Lately Blog</h1>
+                <p>Product Updates, News, Marketing Tips & the Occasional Spreadsheet-Hating Tangent</p>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="bio">
+                <a href="https://www.lately.ai/blog/small-business-confidential-calling-all-marketing-armies-of-one" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/600092a9a9dd5b66ac4dba96_main_multitask-1-p-500.png">
+                        <div style="margin-top: 30px;">Small Business Confidential: Calling All Marketing Armies of One…</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-rob-balasabas-use-video-build-community-conquer-the-world" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffb202458df101caa75b6c_main_balasabas-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Rob Balasabas – Use Video. Build Community. Conquer the World.</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-carla-johnson-turning-brand-stories-into-customer-experiences" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffbdeb2243753f0df6914e_main_johnson-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Carla Johnson – Turning Brand Stories into Customer Experiences</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-bryan-kramer-humanize-your-brand-to-grow-your-business" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffb26198b1e4c6803135de_main_kramer-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Bryan Kramer – Humanize Your Brand to Grow Your Business</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-brian-moran-how-well-do-you-really-know-your-brand" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffbe2582367c3f1cedc16c_main_moran-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Brian Moran – How Well Do You Really Know Your Brand?</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/how-lately-can-make-you-a-better-storyteller" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6000940cf39558599dd032d6_main_a-p-500.png">
+                        <div style="margin-top: 40px;">How Lately can make you a better Storyteller</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/cut-through-the-noise-how-to-get-out-of-marketing-tech-stack-hell" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6000944adfb8f615f8e1155b_main_3-p-500.png">
+                        <div style="margin-top: 40px;">Cut through the noise; how to get out of marketing tech stack hell</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/getting-to-grips-with-omni-analytics" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60009477e8f8062292b4dfc1_main-p-500.png">
+                        <div style="margin-top: 40px;">Getting to Grips with Omni-Analytics</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/how-to-expand-your-marketing-teams-capacity-without-increasing-headcount" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/600094b3a9dd5bbab64dc432_main_armyofone-1-p-500.png">
+                        <div style="margin-top: 30px;">How to Expand your Marketing team’s Capacity (without increasing headcount)</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/marie-kondo-lately-style" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/600094ebe8acf4710d366d96_main-1-p-500.png">
+                        <div style="margin-top: 55px;">Marie Kondo, Lately Style!</div>
+                        <div style="margin-top: 38px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/i-love-rocc-n-roll-boost-your-business-return-on-content-created" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60009529ae15cd2db773a2cb_main-2-p-500.png">
+                        <div style="margin-top: 30px;">I Love ROCC ‘n’ Roll: Boost your Business’ Return on Content Created</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/connecting-through-values-with-david-beckford" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60009563a9dd5b80f94dc75e_db-main-p-500.png">
+                        <div style="margin-top: 40px;">Connecting Through Values with David Beckford</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <!-- <a href="https://www.lately.ai/blog/the-podcast-secrets-that-no-one-tells-you-gah-lately-live-with-sam-sethi-and-kate-bradley-chernis" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/602efdb38edf6f7342b6e819_sam-p-500.png">
+                        <div>The Podcast Secrets That No One Tells You (GAH!)- Lately Live with Sam Sethi and Kate Bradley Chernis</div>
+                        <div>Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-orlando-bowen-when-really-really-really-terrible-things-happen-to-good-people-lately-live-with-orlando-bowen-and-kate-bradley-chernis" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6005e90d650d2a536ea93325_bowen-p-500.png">
+                        <div>When really really REALLY terrible things happen to good people - Lately Live with Orlando Bowen and Kate Bradley Chernis</div>
+                        <div>Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/fomo-for-copywriting-how-to-leverage-urgency-in-a-world-where-live-is-less-lately-live-with-may-king-tsang" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5ff25dcf98f9f97f74c64e92_maylarge-p-500.png">
+                        <div>FOMO for Copywriting - How to Leverage Urgency in a World Where “Live” is Less – Lately Live with May King Tsang</div>
+                        <div>Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/reinvention-in-the-workplace-writing-your-way-through-change" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5ff25d7c919ea6638426d88c_Ohno-p-500.png">
+                        <div style="margin-top: 40px;">Reinvention in the Workplace - Writing Your Way through Change</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/how-virtual-events-will-evolve-in-the-new-norm-a-conversation-with-michael-hoffman-and-kate-bradley-chernis" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fff73d8a70127ea2d2b5123_hoff_lg-p-500.png">
+                        <div>How Virtual Events Will Evolve in the New Norm – A Conversation with Michael Hoffman and Kate Bradley Chernis</div>
+                        <div>Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-ceo-kate-bradley-chernis-featured-on-b2b-lead-gen-podcast" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6000a29fbcf1861e7780e3aa_katesm-p-500.png">
+                        <div style="margin-top: 30px;">Lately CEO Kate Bradley Chernis Featured on B2B Lead Gen Podcast</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/connecting-the-dots-with-content-marketing-and-ai-leadloudly-interview-with-kate-bradley-chernis-hosted-by-nathalie-gregg" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5ff37d3a2590565266d669c5_ll2_main-p-500.png">
+                        <div>Connecting the Dots with Content Marketing and AI – #LeadLoudly Interview with Kate Bradley Chernis, hosted by Nathalie Gregg.</div>
+                        <div>Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/the-copywriting-rules-you-wish-they-taught-you-in-college" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5ff37c8d601e961e6a789c37_writing_main-p-500.png">
+                        <div style="margin-top: 40px;">The Copywriting Rules you WISH They Taught You in College</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-sarah-evans-how-to-market-an-online-conference" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffa937e522018fa4d08036_large-p-500.png">
+                        <div style="margin-top: 40px;">Lately Live with Sarah Evans – How to Market an Online Conference</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/how-to-market-an-online-conference" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6000a2cca88e6bf07334aac8_main_conf-p-500.png">
+                        <div style="margin-top: 40px;">How to Market an Online Conference</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-david-allilson-how-to-actually-build-a-personal-brand-that-makes-moolah" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffa9fe8e539819db84d85c_main_da-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with David Allilson – How to Actually Build a Personal Brand that Makes Moolah</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-barbara-giamanco-ditch-the-pitch-how-to-make-social-make-bank" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffaa46697fc2eacec70cbe_main-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Barbara Giamanco – Ditch the Pitch: How to Make Social Make Bank</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+        <hr style="margin-top: 150px; border: 0px;">
+        <div id="div-btn">
+            <button onclick="previous()">&lt Previous</button>
+        </div>
+        <div style="background-color: #e6f6ef;" >
+            <div id="h1-div">
+                <h1>Ready To Run Social Media Marketing Like <br/>A Pro?</h1>
+                
+            </div>
+            <div id="video-div">
+                <button>REQUEST A DEMO</button>
+                <a href="https://www.youtube.com/watch?v=RlbRiAwwBiQ&feature=youtu.be"><button>WATCH PRODUCT VIDEO</button></a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script>
+            function previous(){
+                var url = "./blog2.html"
+                window.location.href = `${url}?page=2`
+            }
+            
+
+
+
+
+
+        </script>
+    </body>
+</html>

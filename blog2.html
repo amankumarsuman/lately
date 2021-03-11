@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="">
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            body{
+                font-family: 'Mark simonson proxima nova', sans-serif;
+            }
+            #leadership-cont{
+                background-image: linear-gradient(#113630,#174c43);
+                padding: 55px 0 55px 0;
+            }
+            .lately{
+                text-align: center;
+                color: white;
+            }
+            .lately h1{
+                font-size: 46px;
+                font-weight: 700;
+                line-height: 48px;
+            }
+            .lately p{
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 20px;
+            }
+            #wrapper{
+                margin-top: 50px;
+            }
+            #bio{
+                display: grid;
+                width: 75%;
+                margin: auto;
+                grid-template-columns: 30% 30.5% 30.5%;
+                row-gap: 3%;
+                column-gap: 5%;
+            }
+            #people{
+                box-shadow: 0 0 15px -4px #b8b8b8;
+                height: 400px;
+                border-radius: 10px;
+            }
+            #people:hover{
+                box-shadow: 0 0 15px -4px #797777; 
+            }
+            #people img{
+                width: 100%;
+                height: 200px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            #people div:nth-child(2){
+                margin: 20px 20px 0px 20px;
+                color: #174c43;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            #people div:nth-child(3){
+                padding: 20px;
+                color: #00c66b;
+                font-size: 16px;
+                line-height: 22px;
+            }
+            #div-btn{
+                margin: auto;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                width: 225px; 
+            }
+            #div-btn button:hover{
+                color: #00c66b;
+            }
+            #div-btn button{
+                width: 110px; 
+            }
+            button{
+                color: #333;
+                font-size: 14px;
+                padding: 9px 10px 9px 10px;
+                cursor: pointer;
+                border: 0.0001rem solid rgb(201, 197, 197);
+            }
+            #h1-div h1{
+                font-size: 42px;
+                line-height: 46px;
+                text-align: center;
+                padding-top: 80px;
+            }
+            #video-div{
+                width: 410px;
+                margin: auto;
+                margin-top: 40px;
+                padding-bottom: 80px;
+            }
+            #video-div button{
+                border: 2px solid #00c66b;
+                border-radius: 4px;
+            }
+            #video-div button:nth-child(1){
+                color:  #00c66b;
+                background-color: #fff;
+                font-size: 15px;
+            }
+            #video-div button:nth-child(1):hover{
+                background-color: #00c66b;
+                color: #fff;
+            }
+            #video-div a button:nth-child(1){
+                background-color: #174c43;
+                color: #fff;
+                font-size: 15px;
+            }
+            #video-div button:nth-child(2) a{
+                color: #fff;
+                text-decoration: none;
+            }
+            #video-div button:nth-child(2):hover{
+                background-color: #00c66b;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="leadership-cont">
+            <div class="lately">
+                <h1>Lately Blog</h1>
+                <p>Product Updates, News, Marketing Tips & the Occasional Spreadsheet-Hating Tangent</p>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="bio">
+                <a href="https://www.lately.ai/blog/dotto-tech-product-review-of-lately" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/60004800e5c06f05ab7039de_main-p-500.png">
+                        <div style="margin-top: 40px;">Dotto Tech Product Review of Lately</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-mike-vardy-why-the-productivity-you-think-youre-achieving-is-shooting-you-in-the-bum" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffac0857d5204bd3a467b1_vardybig-p-500.png">
+                        <div>Lately Live with Mike Vardy – Why the Productivity You Think You’re Achieving is Shooting You in the Bum</div>
+                        <div>Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/how-to-create-the-content-cycle-your-business-has-been-dreaming-of" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6000902f728f2856793b6852_large-p-500.png">
+                        <div style="margin-top: 30px;">How to Create the Content Cycle Your Business Has Been Dreaming of</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-ian-utile-how-to-use-live-streaming-to-win-customers-the-real-skinny" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffadf7e52201e906d09837_ianbig-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Ian Utile – How to Use Live Streaming to Win Customers (the Real Skinny!)</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-david-allison-why-demographic-based-marketing-is-tanking-your-sales-strategy-and-how-to-fix-it" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/600090cbcdd0c8ee3b479ece_davidbig-p-500.png">
+                        <div>Lately Live with David Allison – Why Demographic-Based Marketing is Tanking Your Sales Strategy (and How to Fix it)</div>
+                        <div>Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/how-to-put-the-human-in-your-customer-service" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/600091033be581916f269ff3_main-p-500.png">
+                        <div style="margin-top: 40px;">How To Put the “Human” in Your Customer Service</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-todd-wilms-championing-startups-one-founder-at-a-time" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffafbeab05f21d2dbf6a8d_wilmsbig-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Todd Wilms – Championing Startups, One Founder at a Time</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-tamara-mccleary-how-to-get-your-staff-to-use-social-for-your-biz-and-do-it-right" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffae3d35fe925405b49fe1_tamarabig-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Tamara McCleary – How to Get Your Staff to Use Social for Your Biz – and Do it Right</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-mike-gingerich-how-to-leverage-social-media-for-lead-generation" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffb101a57f041bdf8a5933_gingbig-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Mike Gingerich – How to Leverage Social Media for Lead-Generation</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-neal-schaffer-social-strategies-for-business-what-really-matters" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffb08bc187f6961539d0ca_nealbig-p-500.png">
+                        <div style="margin-top: 30px;">Lately Live with Neal Schaffer – Social Strategies for Business – What REALLY Matters</div>
+                        <div style="margin-top: 14px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/is-bad-writing-costing-your-business-big-bucks" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/6000922e2c3c62d34ddb2f7d_poo_main-p-500.png">
+                        <div style="margin-top: 40px;">Is Bad Writing Costing Your Business Big Bucks?</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+                <a href="https://www.lately.ai/blog/lately-live-with-john-ferrara-putting-the-social-in-sales" style="text-decoration: none;">
+                    <div id="people">
+                        <img src="https://global-uploads.webflow.com/5fecd74b489ca969cf5a3848/5fffb198697fc228d5c71dfb_main_ferrara-p-500.png">
+                        <div style="margin-top: 40px;">Lately Live with John Ferrara – Putting the Social in Sales.</div>
+                        <div style="margin-top: 30px;">Read More ></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr style="margin-top: 150px; border: 0px;">
+        <div id="div-btn">
+            <button onclick="previous()">&lt Previous</button>
+            <button onclick="next()">Next ></button>
+        </div>
+        <div style="background-color: #e6f6ef;" >
+            <div id="h1-div">
+                <h1>Ready To Run Social Media Marketing Like <br/>A Pro?</h1>
+                
+            </div>
+            <div id="video-div">
+                <button>REQUEST A DEMO</button>
+                <a href="https://www.youtube.com/watch?v=RlbRiAwwBiQ&feature=youtu.be"><button>WATCH PRODUCT VIDEO</button></a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script>
+            function previous(){
+                var url = "./blog.html"
+                window.location.href = `${url}?page=1`
+            }
+            function next(){
+                var url = "./blog3.html"
+                window.location.href = `${url}?page=3`
+            }
+        </script>
+    </body>
+</html>
