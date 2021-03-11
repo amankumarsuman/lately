@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header style starts */
+
+
+
+        #nav-bar-cont {
+            width: 100%;
+            padding: 0px 15% 0px 15%;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid white;
+            position: fixed;
+            background-color: white;
+            margin-top: -80px;
+        }
+
+        #nav-bar-cont>nav {
+            width: 100%;
+            border: 1px solid white;
+            padding: 1% 0% 1% 0%;
+        }
+
+        #nav-bar-cont ul {
+            display: grid;
+            list-style: none;
+            grid-template: "logo empty1 product industry customers resources company empty2 demo login";
+            grid-template-columns: 11.2% 6% 9.5% 9.5% 9.5% 9.5% 9.5% 12.5% 18.5% 4.5%;
+        }
+
+        #nav-bar-cont ul>li {
+            border: 1px solid white;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        #nav-bar-cont ul>li img {
+            width: 100%;
+        }
+
+        #nav-bar-cont ul>li>select {
+            border: 0px;
+        }
+
+        #nav-bar-cont ul>li:nth-child(3),
+        #nav-bar-cont ul>li:nth-child(4),
+        #nav-bar-cont ul>li:nth-child(5),
+        #nav-bar-cont ul>li:nth-child(6),
+        #nav-bar-cont ul>li:nth-child(7) {
+            text-align: center;
+            padding: 12% 0% 5% 0%;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            color: #174C43;
+        }
+
+        #nav-bar-cont ul>li:nth-child(3):hover,
+        #nav-bar-cont ul>li:nth-child(4):hover,
+        #nav-bar-cont ul>li:nth-child(5):hover,
+        #nav-bar-cont ul>li:nth-child(6):hover,
+        #nav-bar-cont ul>li:nth-child(7):hover {
+            color: #00c66b;
+        }
+
+        #nav-bar-cont ul>li:nth-child(9)>a {
+            font-size: 12px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        #nav-bar-cont ul>li:nth-child(10)>a {
+            text-decoration: none;
+            color: #5F5F5F;
+            text-transform: uppercase;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #nav-bar-cont ul>li:nth-child(10)>a:hover {
+            color: #00c66b;
+        }
+
+        #nav-bar-cont ul>li:nth-child(10) {
+            padding-top: 22%;
+        }
+
+        #nav-bar-cont ul>li:nth-child(1) {
+            padding-top: 5%;
+        }
+
+        #switch {
+            width: 69.5%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(3):hover #switch {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -12%;
+            cursor: pointer;
+        }
+
+        #switch>div {
+            display: grid;
+            width: 100%;
+            border: 1px solid white;
+            grid-template: "one two three four";
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .switch-one,
+        .switch-four {
+            background-color: #E8F8F2;
+            box-sizing: border-box;
+            padding: 9% 12% 2% 6%;
+            text-align: left;
+            border: 1px solid #E8F8F2;
+        }
+
+        .switch-a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #174c43;
+            text-transform: uppercase;
+        }
+
+        .switch-a:hover {
+            color: #00c66b;
+        }
+
+        .switch-p {
+            margin-top: 3%;
+            color: #696A6A;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            font-weight: 600;
+            line-height: 1.5em;
+            margin-bottom: 7%;
+        }
+
+        .switch-two,
+        .switch-three {
+            background-color: white;
+            box-sizing: border-box;
+            padding: 9% 8% 2% 12%;
+            text-align: left;
+            border: 1px solid white;
+        }
+
+        .switch-two>.switch-p,
+        .switch-three>.switch-p,
+        .switch-four>.switch-p {
+            margin-bottom: 18%;
+        }
+
+        #switch-second {
+            width: 69.5%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(4):hover #switch-second {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -18.5%;
+            cursor: pointer;
+        }
+
+        #switch-second>div {
+            display: grid;
+            width: 100%;
+            border: 1px solid white;
+            grid-template: "one two three four";
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .switch-second-one {
+            background-color: #E8F8F2;
+            box-sizing: border-box;
+            padding: 5% 12% 2% 6%;
+            text-align: left;
+            border: 1px solid #E8F8F2;
+        }
+
+        .switch-em {
+            color: #7E5F5F;
+            font-weight: 400;
+        }
+
+        .switch-second-two,
+        .switch-second-three,
+        .switch-second-four {
+            background-color: white;
+            box-sizing: border-box;
+            padding: 5% 8% 2% 12%;
+            text-align: left;
+            border: 1px solid white;
+        }
+
+        .switch-second-three,
+        .switch-second-four {
+            padding-top: 16%;
+        }
+
+        #switch-three {
+            width: 16%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(5):hover #switch-three {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -1%;
+            cursor: pointer;
+        }
+
+        #switch-three>div {
+            width: 100%;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10% 5% 10% 8%;
+            text-align: left;
+        }
+
+        #switch-three a {
+            text-transform: none;
+            color: #5F5F5F;
+            font-size: 13px;
+        }
+
+        #switch-three a:hover {
+            color: #00c66b;
+        }
+
+        #switch-four {
+            width: 16%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(6):hover #switch-four {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -1%;
+            cursor: pointer;
+        }
+
+        #switch-four>div {
+            width: 100%;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10% 5% 10% 8%;
+            text-align: left;
+        }
+
+        #switch-four a {
+            text-transform: none;
+            color: #5F5F5F;
+            font-size: 13px;
+        }
+
+        #switch-four a:hover {
+            color: #00c66b;
+        }
+
+        #switch-five {
+            width: 16%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(7):hover #switch-five {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -1%;
+            cursor: pointer;
+        }
+
+        #switch-five>div {
+            width: 100%;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10% 5% 10% 8%;
+            text-align: left;
+        }
+
+        #switch-five a {
+            text-transform: none;
+            color: #5F5F5F;
+            font-size: 13px;
+        }
+
+        #switch-five a:hover {
+            color: #00c66b;
+        }
+
+        .eight-demo {
+            margin-right: 10px;
+            padding: 9px 25px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #00c66b;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #00c66b;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            cursor: pointer;
+            box-sizing: border-box;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            text-decoration: none;
+            margin-left: 8%;
+        }
+
+        /* header style ends */
+
+        /* hero style starts */
+        #hero {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: #174c43;
+            margin-top: 80px;
+        }
+
+        #hero-text {
+            margin-left: auto;
+            margin-right: auto;
+            /* max-width: 1060px; */
+            width: 35%;
+            padding-right: 499px;
+            /* border: 1px solid white; */
+        }
+
+        #hero-heading {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: #00c66b;
+            font-family: "Mark simonson proxima nova", sans-seri;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+
+        #hero-header {
+            color: rgb(255, 255, 255);
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 44px;
+            margin-top: 10px;
+            margin-bottom: 18px;
+            font-family: ProximaNova, sans-serif;
+        }
+
+        #hero-cont {
+            font-size: 22px;
+            line-height: 30px;
+            padding: 0px;
+            color: rgb(255, 255, 255);
+            /* border: 1px solid white; */
+            /* margin-top: 10px; */
+            font-family: ProximaNova, sans-serif
+        }
+
+        #hero-btn {
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgb(0, 198, 107);
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            border-style: solid;
+            border-width: 1.6px;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 22px;
+            margin-top: 27px;
+            padding-bottom: 9px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 9px;
+            position: static;
+            text-align: center;
+        }
+
+        #hero-btn:hover {
+            background-color: rgb(0, 198, 107);
+        }
+
+        /* hero style ends */
+
+        /* banner style starts */
+        #banner {
+            padding-top: 25px;
+            padding-bottom: 35px;
+            background-color: #f4f4f4;
+        }
+
+        #banner-Top-cont {
+            margin-bottom: 0px;
+            padding-right: 163px;
+            padding-left: 163px;
+            margin: 0 290px 0 290px;
+            padding: 0 163px 0 163px;
+            height: 208px;
+            /* border: 1px solid red; */
+        }
+
+        .bCont {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 940px;
+        }
+
+        .bannerHeading {
+            color: #174c43;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px;
+            /* font-family: "Mark simonson proxima nova", sans-serif; */
+            word-spacing: 0px;
+        }
+
+        #banner-heading-cont {
+            /* border: 1px solid red; */
+            /* width: 100%; */
+            margin: auto;
+        }
+
+        #banner-para {
+            color: rgb(95, 95, 95);
+            font-size: 16px;
+            word-spacing: 1px;
+            line-height: 24px;
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            text-align: center;
+            font-family: "Mark simonson proxima nova", sans-serif
+        }
+
+        #banner-img-cont {
+            /* border: 1px solid red; */
+            max-width: 1060px;
+            margin-top: -30px;
+        }
+
+        #banner-img {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 0px;
+        }
+
+        #banner-grid {
+            /* border: 1px solid red; */
+            display: grid;
+            max-width: 1060px;
+            grid-template: "b1 b2 b3";
+            gap: 15px;
+        }
+
+        #bGrid1 {
+            grid-area: b1;
+        }
+
+        #bGrid2 {
+            grid-area: b2;
+        }
+
+        #bGrid3 {
+            grid-area: b3;
+        }
+
+        .bGrid-heading {
+            margin-top: 0px;
+            margin-bottom: 6px;
+            color: #174c43;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+
+        .bGrid-para {
+            color: rgb(95, 95, 95);
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 10px;
+            margin-top: 0px
+        }
+
+        /* banner style ends */
+
+        /* multi grid style starts */
+
+        #sub-head {
+            width: 47%;
+            margin: auto;
+            margin-top: 55px;
+        }
+
+        #subHead {
+            color: rgb(23, 76, 67);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        #multiple-grid-cont {
+            display: grid;
+            grid-template: "mCont1 mCont2 mCont3"
+                "mCont4 mCont5 mCont6"
+                "mCont7 mCont8 mCont9";
+            gap: 23px;
+            /* border: 1px solid red; */
+            max-width: 1060px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 45px;
+        }
+
+        mCont1 {
+            grid-area: mCont1;
+        }
+
+        mCont2 {
+            grid-area: mCont2;
+        }
+
+        mCont3 {
+            grid-area: mCont3;
+        }
+
+        mCont4 {
+            grid-area: mCont4;
+        }
+
+        mCont5 {
+            grid-area: mCont5;
+        }
+
+        mCont6 {
+            grid-area: mCont6;
+        }
+
+        mCont7 {
+            grid-area: mCont7;
+        }
+
+        mCont8 {
+            grid-area: mCont8;
+        }
+
+        mCont9 {
+            grid-area: mCont9;
+        }
+
+
+
+        .multi-grid-heading {
+            color: rgb(23, 76, 67);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 10px;
+            margin-top: 10px
+        }
+
+        .multi-grid-para {
+            color: rgb(95, 95, 95);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+
+        /* multi grid style ends */
+
+        /* small hero style starts */
+
+        #small-banner {
+            width: 100%;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #174c43;
+            margin-top: 80px;
+        }
+
+        #sBanner-quote-cont {
+            width: 61%;
+            margin-left: auto;
+            margin-right: auto;
+            /* border: 1px solid red; */
+            color: rgb(255, 255, 255);
+            font-family: "Mark simonson proxima nova a it", sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            line-height: 30px;
+            padding-top: 0px;
+            text-align: left;
+            font-style: italic;
+        }
+
+        #small-banner-cont2 {
+            width: 62%;
+            margin: auto;
+            margin-top: 20px;
+            /* border: 1px solid red; */
+            padding-bottom: 120px;
+        }
+
+        #small-banner-subCont {
+            float: left;
+            /* border: 1px solid white; */
+            width: 50%;
+        }
+
+        #subCont-img {
+            float: left;
+            width: 30%;
+            /* border: 1px solid pink; */
+        }
+
+        #women-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 100px;
+        }
+
+        #subCont-text {
+            float: left;
+            /* border: 1px solid black; */
+            margin-top: 40px;
+        }
+
+        #subCont-para1 {
+            color: rgb(255, 255, 255);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        #subCont-para2 {
+            color: rgb(255, 255, 255);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        #nimble-cont {
+            float: right;
+            width: 30%;
+            /* border: 1px solid black; */
+            margin-top: 40px;
+        }
+
+        #nimble-img {
+            width: 50%;
+            float: right;
+
+        }
+
+        #nimble {
+            width: 100%;
+        }
+
+        /* small hero style ends */
+
+        /* icons grid style starts */
+
+        #icons-cont {
+            width: 100%;
+            margin: auto;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background-color: #e6f6ef;
+        }
+
+        #icons-heading {
+            width: 50%;
+            margin: auto;
+        }
+
+        #icons-heading h2 {
+            color: rgb(23, 76, 67);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center
+        }
+
+        #icons-grid {
+            display: grid;
+            width: 69%;
+            margin: auto;
+            margin-top: 30px;
+            grid-template: "icon1 icon2 icon3";
+            gap: 15px;
+            /* border: 1px solid red; */
+        }
+
+        #icon1-cont {
+            grid-area: icon1;
+        }
+
+        #icon2-cont {
+            grid-area: icon2;
+        }
+
+        #icon3-cont {
+            grid-area: icon3;
+        }
+
+        .icon-img-cont {
+            width: 45%;
+            margin: auto;
+            /* border: 1px solid black; */
+        }
+
+        .icon-img-cont2 {
+            width: 47.5%;
+            margin: auto;
+        }
+
+        .icon-img-cont3 {
+            width: 50%;
+            margin: auto;
+        }
+
+        .icon-img {
+            width: 100%;
+        }
+
+        .icon-heading {
+            color: rgb(19, 61, 54);
+            font-family: ProximaNova, sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            text-align: center
+        }
+
+        .icon-para {
+            color: rgb(95, 95, 95);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 18px;
+            justify-content: center;
+            line-height: 24px;
+            margin-bottom: 12px;
+            margin-top: 0px;
+            text-align: center
+        }
+
+        /* icons grid style ends */
+
+        /* adgrid style starts */
+
+        #ad-cont {
+            /* border: 1px solid black; */
+            width: 70%;
+            margin: auto;
+            display: grid;
+            grid-template: "adCont1 adCont2";
+            padding-bottom: 80px;
+            margin-top: 90px;
+            border-bottom: 1px solid rgb(187, 187, 187);
+        }
+
+        #adCont1 {
+            grid-area: adCont1;
+            /* border: 1px solid red; */
+        }
+
+        #adCont2 {
+            grid-area: adCont2;
+        }
+
+        #comma-img-cont {
+            width: 7%;
+            /* border: 1px solid green; */
+        }
+
+        #comma-img {
+            width: 100%;
+        }
+
+        #em1 {
+            color: rgb(51, 51, 51);
+            font-family: "Mark simonson proxima nova a it", sans-serif;
+            font-size: 22px;
+            font-weight: 900;
+            line-height: 26px
+        }
+
+        #em2 {
+            color: rgb(51, 51, 51);
+            font-family: "Mark simonson proxima nova a it", sans-serif;
+            font-size: 18px;
+            line-height: 26px
+        }
+
+        #ad-para1 {
+            color: rgb(19, 61, 54);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            margin-bottom: 2px;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        #ad-para2 {
+            color: rgb(19, 61, 54);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 13px;
+            line-height: 20px;
+            text-align: left
+        }
+
+        #ad-imgs-cont {
+            width: 100%;
+            display: grid;
+            grid-template: "adimg1 adimg2 adimg3 adimg4"
+                "adimg5 adimg6 adimg7 adimg8"
+                "adimg9 adimg10 adimg11 adimg12";
+            gap: 10px;
+        }
+
+        #adimg1 {
+            grid-area: adimg1;
+        }
+
+        #adimg2 {
+            grid-area: adimg2;
+        }
+
+        #adimg3 {
+            grid-area: adimg3;
+        }
+
+        #adimg4 {
+            grid-area: adimg4;
+        }
+
+        #adimg5 {
+            grid-area: adimg5;
+        }
+
+        #adimg6 {
+            grid-area: adimg6;
+        }
+
+        #adimg7 {
+            grid-area: adimg7;
+        }
+
+        #adimg8 {
+            grid-area: adimg8;
+        }
+
+        #adimg9 {
+            grid-area: adimg9;
+        }
+
+        #adimg10 {
+            grid-area: adimg10;
+        }
+
+        #adimg11 {
+            grid-area: adimg11;
+        }
+
+        #adimg12 {
+            grid-area: adimg12;
+        }
+
+        .adimg {
+            width: 100%;
+        }
+
+        /* adgrid style ends */
+
+        /* percentage grid style starts */
+
+
+        #percentage-cont {
+            width: 100%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #perc-heading-cont {
+            width: 60%;
+            margin: auto;
+        }
+
+        #perc-heading {
+            color: rgb(23, 76, 67);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            text-align: center
+        }
+
+        #perc-grid-cont {
+            width: 75%;
+            margin: auto;
+            display: grid;
+            grid-template: "perc1 perc2 perc3";
+            gap: 10px;
+            margin-top: 70px;
+
+        }
+
+        #perc1 {
+            grid-area: perc1;
+            border-right-color: rgb(209, 209, 209);
+            border-right-style: solid;
+            border-right-width: 0.8px
+        }
+
+        #perc2 {
+            grid-area: perc2;
+            border-right-color: rgb(209, 209, 209);
+            border-right-style: solid;
+            border-right-width: 0.8px
+        }
+
+        #perc3 {
+            grid-area: perc3;
+        }
+
+        .small-perc-img-cont {
+            width: 19%;
+            margin: auto;
+
+        }
+
+        .small-perc-img {
+            width: 100%;
+        }
+
+        .perc-content-cont {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-top: 7px;
+            border-bottom-width: 4px;
+            border-bottom-style: solid;
+        }
+
+        .perc-number {
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 65px;
+            font-weight: 600;
+            line-height: 65px;
+            margin-top: 24px
+        }
+
+        .perc-text {
+            color: rgb(36, 170, 225);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 29px;
+            font-weight: 600;
+            line-height: 35px;
+            padding-bottom: 4px;
+            text-align: center
+        }
+
+        .perc-subtext {
+            color: rgb(95, 95, 95);
+            font-family: "Mark simonson proxima nova", sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            line-height: 20px;
+            margin-bottom: 46px;
+            margin-top: 11px;
+            padding-left: 71px;
+            padding-right: 71px;
+            text-align: center
+        }
+
+        /* percentage grid style ends */
+
+        /* footer style starts */
+
+        #footer {
+            width: 1440px;
+            background-color: white;
+            padding: 30px 15% 30px 15%;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .footer-sub-cont {
+            display: grid;
+            width: 100;
+            border: 1px solid white;
+            grid-template: "box1 box2 box3 box4";
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .box-1 {
+            grid-area: box1;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .box-2 {
+            grid-area: box2;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .box-3 {
+            grid-area: box3;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .box-4 {
+            grid-area: box4;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .h5 {
+            padding: 0px;
+            margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: ProximaNova, sans-serif;
+            color: #7d7d7d;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-block-start: 1.67em;
+            margin-block-end: 1.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 40px;
+            color: #5f5f5f;
+            font-size: 16px;
+            line-height: 0px;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+        }
+
+        .list {
+            padding: 0px;
+            margin: 0px;
+            padding-bottom: 0px;
+            box-sizing: border-box;
+            display: list-item;
+            text-align: left;
+            list-style: none;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+        }
+
+        .footer-link {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            color: #7d7d7d;
+            font-size: 14px;
+            text-decoration: none;
+            background-color: transparent;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: left;
+            list-style: none;
+            line-height: 24px;
+            margin-left: -18%;
+        }
+
+        .link {
+            color: #7d7d7d;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .box-3>div {
+            color: #5f5f5f;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .box-4>div {
+            color: #5f5f5f;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .footer-link:hover {
+            color: #00c66b;
+        }
+
+        .link:hover {
+            color: #00c66b;
+        }
+
+        #ninth-logo-cont {
+            width: 1440px;
+            background-color: white;
+            padding: 0px 15% 0px 15%;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid white;
+        }
+
+        #ninth-logo-cont>div {
+            display: grid;
+            width: 100%;
+            border: 1px solid white;
+            border-top: 4px solid #F7F7F7;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            grid-template: "one empty two three four five six seven eight nine";
+            grid-template-columns: 12% 55% 3% 3% 3% 3% 3% 3% 3% 3%;
+            grid-column-gap: 1%;
+        }
+
+        .logo-one {
+            grid-area: one;
+            border: 1px solid white;
+        }
+
+        .empty {
+            grid-area: empty;
+            border: 1px solid white;
+        }
+
+        .logo-two {
+            grid-area: two;
+            border: 1px solid white;
+        }
+
+        .logo-three {
+            grid-area: three;
+            border: 1px solid white;
+        }
+
+        .logo-four {
+            grid-area: four;
+            border: 1px solid white;
+        }
+
+        .logo-five {
+            grid-area: five;
+            border: 1px solid white;
+        }
+
+        .logo-six {
+            grid-area: six;
+            border: 1px solid white;
+        }
+
+        .logo-seven {
+            grid-area: seven;
+            border: 1px solid white;
+        }
+
+        .logo-eight {
+            grid-area: eight;
+            border: 1px solid white;
+        }
+
+        .logo-nine {
+            grid-area: nine;
+            border: 1px solid white;
+        }
+
+        .logo-one img {
+            width: 100%;
+        }
+
+        #ninth-logo-cont>div img {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        .logo-two:hover,
+        .logo-three:hover,
+        .logo-four:hover,
+        .logo-five:hover,
+        .logo-six:hover,
+        .logo-seven:hover,
+        .logo-eight:hover,
+        .logo-nine:hover {
+            box-shadow: 1px 1px 20px;
+            border-radius: 10em;
+        }
+
+        #last-main-cont {
+            width: 100%;
+            background-color: #174C43;
+            padding: 30px 15% 30px 15%;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .last-sub-cont {
+            display: grid;
+            width: 100%;
+            border: 1px solid #174C43;
+            grid-template: "left right";
+            grid-template-columns: 10% 30%;
+            grid-column-gap: 63%;
+        }
+
+        .last-left {
+            grid-area: left;
+        }
+
+        .last-right {
+            grid-area: right;
+        }
+
+        .last-left>a {
+            text-decoration: none;
+            color: #8B9D86;
+            font-size: 12px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+        }
+
+        .last-right>p {
+            font-size: 12px;
+            color: #8B9D86;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            margin-top: 4px;
+        }
+
+        /* footer style ends */
+
+        /* button banner style starts */
+
+        #h1-div h1 {
+            font-size: 42px;
+            line-height: 46px;
+            text-align: center;
+            padding-top: 40px;
+            color: #174c43;
+
+        }
+
+        #video-div {
+            width: 410px;
+            margin: auto;
+            margin-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        #video-div button {
+            border: 2px solid #00c66b;
+            border-radius: 4px;
+        }
+
+        #video-div button:nth-child(1) {
+            color: #00c66b;
+            background-color: #fff;
+            font-size: 15px;
+        }
+
+        #video-div button:nth-child(1):hover {
+            background-color: #00c66b;
+            color: #fff;
+        }
+
+        #video-div a button:nth-child(1) {
+            background-color: #174c43;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        #video-div button:nth-child(2) a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #video-div button:nth-child(2):hover {
+            background-color: #00c66b;
+
+        }
+
+        button {
+            color: #333;
+            font-size: 14px;
+            padding: 9px 20px 9px 20px;
+            cursor: pointer;
+            border: 0.0001rem solid rgb(201, 197, 197);
+            margin-right: 10px;
+        }
+
+        #button-banner {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER HTML STARTS -->
+    <div id="nav-bar-cont">
+        <nav>
+            <ul>
+                <li>
+                    <a
+                        href="file:///C:/Users/My%20Computer/Desktop/Masai/MASAI_COURSE/UNIT-2/TEAM%20DRAS/lately/Home_Page/Home.html">
+                        <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
+                            alt="">
+                    </a>
+                </li>
+                <li></li>
+                <li>Product<select name="" id="" disabled></select>
+                    <div id="switch">
+                        <div>
+                            <div class="switch-one">
+                                <a href="#" class="switch-a">Pricing</a>
+                                <p class="switch-p">See which edition fits your business like a glove</p>
+                            </div>
+                            <div class="switch-two">
+                                <a href="#" class="switch-a">A.I. CONTENT WRITER</a>
+                                <p class="switch-p">Automatically writes and pre-tests content for your social media
+                                    programs</p>
+                                <a href="#" class="switch-a">SOCIAL ANALYTICS</a>
+                                <p class="switch-p">Informs your content strategy and make your content more engaging
+                                    with content analytics</p>
+                            </div>
+                            <div class="switch-three">
+                                <a href="#" class="switch-a">SOCIAL MEDIA MARKETING</a>
+                                <p class="switch-p">Everything you need to scale your social media marketing program</p>
+                                <a href="#" class="switch-a">SOCIAL SELLING</a>
+                                <p class="switch-p">Extend your social content across executives, sales, employees,
+                                    franchises, and more</p>
+                            </div>
+                            <div class="switch-four">
+                                <a href="#" class="switch-a">VIDEO AUTOGENERATOR</a>
+                                <p class="switch-p">Turn your company videos into bite-sized social media video clips
+                                    and social media posts</p>
+                                <a href="#" class="switch-a">PARENT ACCOUNTS</a>
+                                <p class="switch-p">Easily manage parent-child social media accounts</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>Industries <select name="" id="" disabled></select>
+                    <div id="switch-second">
+                        <div>
+                            <div class="switch-second-one">
+                                <em class="switch-em">Every Size</em> <br>
+                                <br>
+                                <a href="#" class="switch-a">GLOBAL ENTERPRISES</a>
+                                <p class="switch-p">Ensure quality social media messaging across every region, product
+                                    and brand</p>
+                                <a href="#" class="switch-a">FRANCHISES</a>
+                                <p class="switch-p">Set each franchise up for social media success</p>
+                                <a href="#" class="switch-a">SMALL BUSINESSES</a>
+                                <p class="switch-p">Grow your business with social media marketing</p>
+                            </div>
+                            <div class="switch-second-two">
+                                <em class="switch-em">Every Industry</em><br>
+                                <br>
+                                <a href="#" class="switch-a">TECHNOLOGY</a>
+                                <p class="switch-p">Scale your organic social media programs</p>
+                                <a href="#" class="switch-a">PROFESSIONAL SERVICES</a>
+                                <p class="switch-p">Attract and impress clients on social media</p>
+                                <a href="#" class="switch-a">FINANCIAL SERVICES</a>
+                                <p class="switch-p">Scale social media content publishing across agents, advisers and
+                                    brokers</p>
+                            </div>
+                            <div class="switch-second-three">
+                                <a href="#" class="switch-a">MEDIA & ENTERTAINMENT</a>
+                                <p class="switch-p">Reach and engage more viewers with social media marketing</p>
+                                <a href="#" class="switch-a">NEWS & PUBLIC AGENCIES</a>
+                                <p class="switch-p">Spread your news across social media more efficiently</p>
+                                <a href="#" class="switch-a">CONSUMER BRANDS</a>
+                                <p class="switch-p">Share your brand experience and reach new customers</p>
+                            </div>
+                            <div class="switch-second-four">
+                                <a href="#" class="switch-a">EDUCATION</a>
+                                <p class="switch-p">Scale social media across schools, departments and campuses</p>
+                                <a href="#" class="switch-a">HEALTHCARE & PHARMA</a>
+                                <p class="switch-p">Scale Your healthcare and Pharma social media programs</p>
+                                <a href="#" class="switch-a">SOCIAL MEDIA AGENCIES</a>
+                                <p class="switch-p">Scale your social media empire across more clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>Customers <select name="" id="" disabled></select>
+                    <div id="switch-three">
+                        <div>
+                            <a href="#" class="switch-a">Customers Overview</a>
+                        </div>
+                    </div>
+                </li>
+                <li>Resources <select name="" id="" disabled></select>
+                    <div id="switch-four">
+                        <div>
+                            <a href="#" class="switch-a">Lately Office Hours Signup</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Lately LIVE Videos</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">How to Position ANYTHING</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Blog</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Ebooks</a>
+                        </div>
+                    </div>
+                </li>
+                <li>Company <select name="" id="" disabled></select>
+                    <div id="switch-five">
+                        <div>
+                            <a href="#" class="switch-a">Company Overview</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Leadership</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Press & News</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Blog</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Contact Info</a><br>
+                        </div>
+                    </div>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#" class="eight-demo">Request a Demo</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- HEADER HTML ENDS -->
+
+    <!-- hero html starts -->
+    <div id="hero">
+        <div id="hero-text">
+            <h3 id="hero-heading">A.I. Social Media Content Writing Software</h3>
+            <h1 id="hero-header"><strong style="font-weight: bold;">Unlock the value in your existing longform
+                    content</strong>
+            </h1>
+            <div id="hero-cont">
+                Use A.I. to turn your blog posts, articles, datasheets, podcasts, webinars and videos into social media
+                gold
+            </div>
+            <a id="hero-btn" href="#">REQUEST A FREE DEMO</a>
+        </div>
+    </div>
+    <!-- hero html ends -->
+
+    <!-- banner html starts -->
+    <div id="banner">
+        <div id="banner-Top-cont" class="bCont">
+            <div id="banner-heading-cont">
+                <h2 class="bannerHeading">
+                    <strong style="font-weight: bold;">Generate all the social media content you need to scale your
+                        social media programs</strong>
+                </h2>
+            </div>
+            <p id="banner-para">
+                You already invest in high-quality content that is currently trapped in videos, podcasts, and longform
+                written documents. The Lately A.I. Content Writer will ingest all any longform content and give you back
+                droves of pre-tested new social media posts ready for you to review and feed into your social media
+                programs.
+            </p>
+        </div>
+        <div id="banner-img-cont" class="bCont">
+            <img id="banner-img"
+                src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7a906e969ea8c00a347d8_home-bowtie-content-to-gold.png"
+                alt="img">
+        </div>
+        <div id="banner-grid" class="bCont">
+            <div id="bGrid1">
+                <h3 class="bGrid-heading">
+                    <strong style="font-weight: bold;">A.I. Content Generators</strong>
+                </h3>
+                <p class="bGrid-para">
+                    Automatically turns any written content, audio files or videos into hundreds of social media posts
+                    ready for you to
+                    review and publish.
+                </p>
+            </div>
+            <div id="bGrid2">
+                <h3 class="bGrid-heading">
+                    <strong style="font-weight: bold;">A.I.-writing Model</strong>
+                </h3>
+                <p class="bGrid-para">
+                    Our A.I. constantly learns from your past social media posts and builds an A.I. writing model based
+                    on what is most
+                    engaging for your audience.
+                </p>
+            </div>
+            <div id="bGrid3">
+                <h3 class="bGrid-heading">
+                    <strong style="font-weight: bold;">Pre-tests Social Media Posts</strong>
+                </h3>
+                <p class="bGrid-para">
+                    Our A.I. Social Content Platform uses what it learns from your audience to pre-test each social
+                    media post for highest
+                    impact.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner html ends -->
+
+    <!-- multi-grid html starts -->
+    <div id="sub-head">
+        <h2 id="subHead">
+            <strong style="font-weight: bold;">Key social media content writing software features</strong>
+        </h2>
+    </div>
+    <div id="multiple-grid-cont">
+        <div id="mCont1">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">Web Copy Autogenerator</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Automatically turns your blogs, website copy and longform written content into social media posts
+            </p>
+        </div>
+        <div id="mCont2">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">Messaging Guides</strong>
+            </h4>
+            <p class="multi-grid-para">
+                You provide your branding and messaging guidelines and we incorporate it into your A.I.-writing model
+            </p>
+        </div>
+        <div id="mCont3">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">Transcripts</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Our A.I. platform first transcribes your audio and video files and gives you the full transcript
+            </p>
+        </div>
+        <div id="mCont4">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">Podcast Clip Autogenerator</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Automatically turns your podcasts and audio-files into droves of social media posts that link back to
+                your podcast
+            </p>
+        </div>
+        <div id="mCont5">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">SEO & Keyword Enforcement</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Our A.I. writing model will ensure every social media post follows your keyword guidelines
+            </p>
+        </div>
+        <div id="mCont6">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">AI Writing Model</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Lately builds an A.I. writing model based on your content guidelines and audience engagement
+            </p>
+        </div>
+        <div id="mCont7">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">Video Clip Autogenerator</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Automatically turns your videos into social media posts that include the specific video clip with
+                captures and a link to
+                the full video
+            </p>
+        </div>
+        <div id="mCont8">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">Voice & Tonel</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Ensures every social media post enforces your brand, voice and tone guidelines provided during setup
+            </p>
+        </div>
+        <div id="mCont9">
+            <h4 class="multi-grid-heading">
+                <strong style="font-weight: bold;">Audience Pre-Testing</strong>
+            </h4>
+            <p class="multi-grid-para">
+                Every social media post written by the Lately A.I. content writer is pre-tested based on what A.I. knows
+                will resonate
+                best with your audience
+            </p>
+        </div>
+    </div>
+
+    <!-- multi-grid html ends -->
+
+    <!-- small hero html starts -->
+
+    <div id="small-banner">
+        <div id="sBanner-quote-cont">
+            “Lately’s social post autogenerator
+            <strong style="font-weight: bold; font-weight: 600; font-size: 22px;">jumpstarts our social posts into more
+                compelling and sticky
+                content</strong>. BIG fan.”
+        </div>
+        <div id="small-banner-cont2">
+            <div id="small-banner-subCont">
+                <div id="subCont-img">
+                    <img id="women-img"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6000dfc64490f90e93b49037_1609627384701-p-500.jpeg"
+                        alt="img">
+                </div>
+                <div id="subCont-text">
+                    <p id="subCont-para1">Lisa Loeffler</p>
+                    <p id="subCont-para2">Director of Content Marketing</p>
+                </div>
+            </div>
+            <div id="nimble-cont">
+                <div id="nimble-img">
+                    <img id="nimble"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffcad224ba5e00fc97f5f6e_nimble-logo-white.svg"
+                        alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- small hero html ends -->
+
+    <!-- icons grid html starts -->
+
+    <div id="icons-cont">
+        <div id="icons-heading">
+            <h2><strong style="font-weight: bold;">The Lately social media A.I. content writing solution is designed for
+                    companies of every
+                    size</strong>
+            </h2>
+        </div>
+        <div id="icons-grid">
+            <div id="icon1-cont">
+                <div class="icon-img-cont">
+                    <img class="icon-img"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe2a107354a9a53719df14e_Icon_Circles_AI.svg"
+                        alt="img">
+                </div>
+                <h2 class="icon-heading">
+                    Artificial Intelligence Engine
+                </h2>
+                <p class="icon-para">
+                    Our A.I. constantly learns from your past social media posts and builds a writing model based on
+                    what is most engaging
+                    for your audience.
+                </p>
+            </div>
+            <div id="icon2-cont">
+                <div class="icon-img-cont2">
+                    <img class="icon-img"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe2a106b3d5038e3fa9b20f_Icon_Circles_Parent_Child.svg"
+                        alt="img">
+                </div>
+                <h2 class="icon-heading">
+                    Parent-Child Accounts
+                </h2>
+                <p class="icon-para">
+                    Make it easy to manage, publish and analyze all of your social media content across multiple
+                    products, brands, regions,
+                    franchises, and users all from one centralized place.
+                </p>
+            </div>
+            <div id="icon3-cont">
+                <div class="icon-img-cont3">
+                    <img class="icon-img"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe2a1073d22be4b6068b0ff_Icon_Circles_Pricing.svg"
+                        alt="img">
+                </div>
+                <h2 class="icon-heading">
+                    Just-Right Pricing
+                </h2>
+                <p class="icon-para">
+                    Whether you’re just starting to scale your social media marketing program or you’re ready to extend
+                    it across executives
+                    and sales teams, we have an edition right-sized for your needs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- icons grid html ends -->
+
+    <!-- ad grid html starts -->
+    <div id="ad-cont">
+        <div id="adCont1">
+            <div id="comma-img-cont">
+                <img id="comma-img"
+                    src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fea2eed7aaf965bf7857079_Quote_DkGreen.svg"
+                    alt="">
+            </div>
+            <strong style="font-weight: bold;">
+                <em id="em1">“Overall Lately is a homerun.</em>
+                <em id="em2">I love that I can create and schedule all my content in about 20 minutes per week.”</em>
+            </strong>
+            <p id="ad-para1">Michael Oberther</p>
+            <p id="ad-para2">Director of Business Development, Supporting Strategies</p>
+        </div>
+        <div id="adCont2">
+            <div id="ad-imgs-cont">
+                <div id="adimg1">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdfb04119999916a1844b1_logo_sap_x3.png"
+                        alt="img">
+                </div>
+                <div id="adimg2">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf8992c91187ad248ca38_logo_vayner_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg3">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf8995d4cba780af3d126_logo_husky_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg4">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdfaaa6b4b5409314ea081_logo_launch_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg5">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf899f52edc178bc1bae6_logo_dhl_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg6">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf899d43bfa7a25f8fd57_logo_amerifirst_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg7">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf899c6b611a0e23c5130_logo_foursquare_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg8">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf899c43ff7deb1dae546_logo_nethealth_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg9">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf899fdfd512e168afc71_logo_ss_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg10">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf8994a49ee84e45887ab_logo_valuegraphics_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg11">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffdf8986b4b5484c14e9848_logo_sbe_x.png"
+                        alt="img">
+                </div>
+                <div id="adimg12">
+                    <img class="adimg"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600106c51ae9545830537b15_nimblelogo.png"
+                        alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ad grid html ends -->
+
+
+    <!-- percentage grid html starts -->
+    <div id="percentage-cont">
+        <div id="perc-heading-cont">
+            <h2 id="perc-heading">
+                Customers See Real Results From The Free Social Media Content Created And Managed With Lately
+            </h2>
+        </div>
+        <div id="perc-grid-cont">
+            <div id="perc1">
+                <div class="small-perc-img-cont">
+                    <img class="small-perc-img"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe8eaa301171b1f5cc69d87_Color_Icons_Engagement.svg"
+                        alt="img">
+                </div>
+                <div class="perc-content-cont" style="border-bottom-color:rgb(36, 170, 225)">
+                    <p class="perc-number" style="color: rgb(36, 170, 225)">+500%</p>
+                    <p class="perc-text">ENGAGEMENT</p>
+                </div>
+                <p class="perc-subtext">No – that’s not a typo</p>
+            </div>
+            <div id="perc2">
+                <div class="small-perc-img-cont">
+                    <img class="small-perc-img"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe8eaa39cc80bee2292190c_Color_Icons_Clicks.svg"
+                        alt="img">
+                </div>
+                <div class="perc-content-cont" style="border-bottom-color:rgb(0, 198, 107)">
+                    <p class="perc-number" style="color: rgb(0, 198, 107);">+245%
+                    </p>
+                    <p class="perc-text" style="color: rgb(0, 198, 107);">MORE CLICKS</p>
+                </div>
+                <p class="perc-subtext">More clicks = mo’ better</p>
+            </div>
+            <div id="perc3">
+                <div class="small-perc-img-cont">
+                    <img class="small-perc-img"
+                        src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fe8eaa333bab928ce2f7868_Color_Icons_Leads.svg"
+                        alt="img">
+                </div>
+                <div class="perc-content-cont " style="border-bottom-color:rgb(22, 132, 182)">
+                    <p class="perc-number" style="color: rgb(22, 132, 182);">+200%
+                    </p>
+                    <p class="perc-text" style="color: rgb(22, 132, 182)">MORE LEADS</p>
+                </div>
+                <p class="perc-subtext">And higher quality lead</p>
+            </div>
+        </div>
+    </div>
+    <!-- percentage grid html ends -->
+
+
+    <!-- button-banner starts -->
+
+    <div id="button-banner" style="background-color: #e6f6ef;">
+        <div id="h1-div">
+            <h1>Ready To Run Social Media Marketing Like <br />A Pro?</h1>
+        </div>
+        <div id="video-div">
+            <button>REQUEST A DEMO</button>
+            <a href="https://www.youtube.com/watch?v=RlbRiAwwBiQ&feature=youtu.be"><button>WATCH PRODUCT
+                    VIDEO</button></a>
+        </div>
+    </div>
+
+    <!-- button banner ends -->
+
+    <!-- footer html starts -->
+
+    <div id="footer">
+        <div class="footer-sub-cont">
+            <div class="box-1">
+                <h5 class="h5">Company</h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/company/company-overview" class="footer-link">Company Overview</a>
+                    </li>
+                    <li class="list">
+                        <a href="/company/leadership" class="footer-link">Leadership</a>
+                    </li>
+                    <li class="list">
+                        <a href="/customers/customer-stories" class="footer-link">Customers</a>
+                    </li>
+                    <li class="list">
+                        <a href="/company/press" class="footer-link">Press & News</a>
+                    </li>
+                    <li class="list">
+                        <a href="/company/contact" class="footer-link">Contact Info</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-2">
+                <h5 class="h5">PRODUCT</h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/product/lately-social-media-ai-content-platform" class="footer-link">Product
+                            Overview</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-media-content-writing-ai-software-solution" class="footer-link">A.I.
+                            Social Content Writer</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-media-marketing-ai-software-solution" class="footer-link">Social Media
+                            Marketing</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-selling-ai-software-solution" class="footer-link">Social Selling</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-media-content-analytics-software" class="footer-link">Social Media
+                            Analytics</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.trylately.com/social-post-autogenerator" class="footer-link">Sample A.I.
+                            Autogenerator</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://chrome.google.com/webstore/detail/generate-to-lately/bcghcdjbnjhbpokejekampjgnhchcapl?hl=en"
+                            target="_blank" class="footer-link">Autogenerator Chrome Extension</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/parent-child-accounts" class="footer-link">Parent Accounts</a>
+                    </li>
+                </ul>
+                <h5 class="h5">
+                    <a href="/pricing/lately-pricing" class="link">Pricing</a>
+                </h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/pricing/pricing-for-social-media-savvy-individuals" class="footer-link">Social Animal
+                            Edition</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="footer-link">Social Marketing Edition</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="footer-link">Social Enterprise Edition</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="footer-link">Social Agency Edition</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h5 class="h5">resources</h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/resources/ebooks" class="footer-link">Ebooks</a>
+                    </li>
+                    <li class="list">
+                        <a href="/resources/blog" class="footer-link">Blog</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://helpcenter.trylately.com/hc/en-us" class="footer-link">Help Center</a>
+                    </li>
+                </ul>
+                <div>Lately Office Hours</div>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/resources/lately-live-videos" class="footer-link">Lately LIVE Videos</a>
+                    </li>
+                    <li class="list">
+                        <a href="/resources/how-to-position-anything" class="footer-link">How to Position ANYTHING</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://zoom.us/webinar/register/WN_7_ObcIwKRja8jF1ahuSOVQ" class="footer-link">Lately
+                            101</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.youtube.com/c/LatelyAI/videos" class="footer-link">Video Tutorials</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-4">
+                <h5 class="h5">industries</h5>
+                <div>Every Size</div>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/industries/enterprise-social-content-management-software-for-global-companies"
+                            class="footer-link">Global Enterprises</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/distributed-social-media-solutions-for-franchises"
+                            class="footer-link">Franchises</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-tools-for-small-businesses"
+                            class="footer-link">Small
+                            Businesses</a>
+                    </li>
+                </ul>
+                <div>Every Industry</div>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/industries/organic-social-media-program-solutions-for-tech-companies"
+                            class="footer-link">Technology</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-selling-platform-for-professional-services-firms"
+                            class="footer-link">Professional Services</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/compliant-social-media-content-for-financial-services-agents-advisers-brokers"
+                            class="footer-link">Financial Services</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-products-for-media-and-entertainment-companies"
+                            class="footer-link">Media & Entertainment</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-applications-for-news-and-public-information-agencies"
+                            class="footer-link">News & Public Agencies</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-platform-for-consumer-brands-and-b2c"
+                            class="footer-link">Consumer Brands</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-tools-schools-and-universities"
+                            class="footer-link">Education</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-products-healthcare-pharma" class="footer-link">Healthcare &
+                            Pharma</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-agency-ai-software" class="footer-link">Social Media
+                            Agencies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="ninth-logo-cont">
+        <div>
+            <div class="logo-one">
+                <a href="http://127.0.0.1:5500/Home.html">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7e81a75428f60b5ff0d00_lately-footer-logo.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="empty"></div>
+            <div class="logo-two">
+                <a href="https://www.facebook.com/LatelyAI/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98ca57d5a01f8b06ac_lately-footer-facebook-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-three">
+                <a href="https://twitter.com/LatelyAI">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98d033dccb4e0c5c8a_lately-footer-twitter-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-four">
+                <a href="https://www.linkedin.com/company/latelyai/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98a46fb9298adb10cf_lately-footer-linkedin-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-five">
+                <a href="https://www.instagram.com/LatelyAI/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea981e42d6cdd21dc804_lately-footer-instagram-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-six">
+                <a href="https://www.youtube.com/LatelyAI">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98d97acfb972a65b4a_lately-footer-youtube-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-seven">
+                <a href="https://www.tiktok.com/@latelyai">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/60199af29cf48909018c3acc_social_tiktok_grey.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-eight">
+                <a href="https://lately.slack.com/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98876e67fbe9ce343b_lately-footer-slack-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-nine">
+                <a href="https://lately.activehosted.com/f/1">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98852e65824bc54cf9_lately-footer-email-icon.svg"
+                        alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="last-main-cont">
+        <div class="last-sub-cont">
+            <div class="last-left">
+                <a href="https://www.lately.ai/terms">Terms
+                    ●
+                </a>
+                <a href="https://www.lately.ai/privacy">Privacy
+                </a>
+            </div>
+            <div class="last-right">
+                <p>Copyright © 2021 Lately, Inc. Stone Ridge, NY, USA</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer html ends -->
+</body>
+
+</html>
