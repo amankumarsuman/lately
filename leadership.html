@@ -1,216 +1,1276 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            *{
-                padding: 0px;
-                margin: 0px;
-            }
-            body{
-                font-family: 'Mark simonson proxima nova', sans-serif;
-                background-color: #e8f8f2;
-            }
-            #leadership-cont{
-                background-image: linear-gradient(#113630,#174c43);
-                padding: 55px 0 55px 0;
-            }
-            .lately{
-                text-align: center;
-                color: white;
-            }
-            .lately h1{
-                font-size: 46px;
-                font-weight: 700;
-                line-height: 48px;
-            }
-            .lately p{
-                font-size: 20px;
-                line-height: 24px;
-            }
-            #wrapper{
-                background-color: #e8f8f2;
-                box-sizing: border-box;
-            }
-            #bio{
+
+<head>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        /* footer */
+        #footer {
+            width: 100%;
+            background-color: white;
+            padding: 30px 15% 30px 15%;
+            display: block;
+            box-sizing: border-box;
+            margin-top: 300px;
+        }
+
+        .footer-sub-cont {
+            display: grid;
+            width: 100%;
+            border: 1px solid white;
+            grid-template: "box1 box2 box3 box4";
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .box-1 {
+            grid-area: box1;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .box-2 {
+            grid-area: box2;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .box-3 {
+            grid-area: box3;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .box-4 {
+            grid-area: box4;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+
+        .h5 {
+            padding: 0px;
+            margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: ProximaNova, sans-serif;
+            color: #7d7d7d;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-block-start: 1.67em;
+            margin-block-end: 1.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 40px;
+            color: #5f5f5f;
+            font-size: 16px;
+            line-height: 0px;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+        }
+
+        .list {
+            padding: 0px;
+            margin: 0px;
+            padding-bottom: 0px;
+            box-sizing: border-box;
+            display: list-item;
+            text-align: left;
+            list-style: none;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+        }
+
+        .footer-link {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            color: #7d7d7d;
+            font-size: 14px;
+            text-decoration: none;
+            background-color: transparent;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: left;
+            list-style: none;
+            line-height: 24px;
+            margin-left: -18%;
+        }
+
+        .link {
+            color: #7d7d7d;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .box-3>div {
+            color: #5f5f5f;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .box-4>div {
+            color: #5f5f5f;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .footer-link:hover {
+            color: #00c66b;
+        }
+
+        .link:hover {
+            color: #00c66b;
+        }
+
+        #ninth-logo-cont {
+            width: 100%;
+            background-color: white;
+            padding: 0px 15% 0px 15%;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid white;
+        }
+
+        #ninth-logo-cont>div {
+            display: grid;
+            width: 100%;
+            border: 1px solid white;
+            border-top: 4px solid #F7F7F7;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            grid-template: "one empty two three four five six seven eight nine";
+            grid-template-columns: 12% 55% 3% 3% 3% 3% 3% 3% 3% 3%;
+            grid-column-gap: 1%;
+        }
+
+        .logo-one {
+            grid-area: one;
+            border: 1px solid white;
+        }
+
+        .empty {
+            grid-area: empty;
+            border: 1px solid white;
+        }
+
+        .logo-two {
+            grid-area: two;
+            border: 1px solid white;
+        }
+
+        .logo-three {
+            grid-area: three;
+            border: 1px solid white;
+        }
+
+        .logo-four {
+            grid-area: four;
+            border: 1px solid white;
+        }
+
+        .logo-five {
+            grid-area: five;
+            border: 1px solid white;
+        }
+
+        .logo-six {
+            grid-area: six;
+            border: 1px solid white;
+        }
+
+        .logo-seven {
+            grid-area: seven;
+            border: 1px solid white;
+        }
+
+        .logo-eight {
+            grid-area: eight;
+            border: 1px solid white;
+        }
+
+        .logo-nine {
+            grid-area: nine;
+            border: 1px solid white;
+        }
+
+        .logo-one img {
+            width: 100%;
+        }
+
+        #ninth-logo-cont>div img {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        .logo-two:hover,
+        .logo-three:hover,
+        .logo-four:hover,
+        .logo-five:hover,
+        .logo-six:hover,
+        .logo-seven:hover,
+        .logo-eight:hover,
+        .logo-nine:hover {
+            box-shadow: 1px 1px 20px;
+            border-radius: 10em;
+        }
+
+        #last-main-cont {
+            width: 100%;
+            background-color: #174C43;
+            padding: 30px 15% 30px 15%;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        .last-sub-cont {
+            display: grid;
+            width: 100%;
+            border: 1px solid #174C43;
+            grid-template: "left right";
+            grid-template-columns: 10% 30%;
+            grid-column-gap: 63%;
+        }
+
+        .last-left {
+            grid-area: left;
+        }
+
+        .last-right {
+            grid-area: right;
+        }
+
+        .last-left>a {
+            text-decoration: none;
+            color: #8B9D86;
+            font-size: 12px;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+        }
+
+        .last-right>p {
+            font-size: 12px;
+            color: #8B9D86;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            margin-top: 4px;
+        }
+
+
+
+        /* header */
+        #nav-bar-cont {
+            width: 100%;
+            padding: 0px 15% 0px 15%;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid white;
+            position: fixed;
+            margin-top: -4.6%;
+            background-color: white;
+        }
+
+        #nav-bar-cont>nav {
+            width: 100%;
+            border: 1px solid white;
+            padding: 1% 0% 1% 0%;
+        }
+
+        #nav-bar-cont ul {
+            display: grid;
+            list-style: none;
+            grid-template: "logo empty1 product industry customers resources company empty2 demo login";
+            grid-template-columns: 11.2% 6% 9.5% 9.5% 9.5% 9.5% 9.5% 12.5% 18.5% 4.5%;
+        }
+
+        #nav-bar-cont ul>li {
+            border: 1px solid white;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        #nav-bar-cont ul>li img {
+            width: 100%;
+        }
+
+        #nav-bar-cont ul>li>select {
+            border: 0px;
+        }
+
+        #nav-bar-cont ul>li:nth-child(3),
+        #nav-bar-cont ul>li:nth-child(4),
+        #nav-bar-cont ul>li:nth-child(5),
+        #nav-bar-cont ul>li:nth-child(6),
+        #nav-bar-cont ul>li:nth-child(7) {
+            text-align: center;
+            padding: 12% 0% 5% 0%;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            color: #174C43;
+        }
+
+        #nav-bar-cont ul>li:nth-child(3):hover,
+        #nav-bar-cont ul>li:nth-child(4):hover,
+        #nav-bar-cont ul>li:nth-child(5):hover,
+        #nav-bar-cont ul>li:nth-child(6):hover,
+        #nav-bar-cont ul>li:nth-child(7):hover {
+            color: #00c66b;
+        }
+
+        #nav-bar-cont ul>li:nth-child(9)>a {
+            font-size: 12px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        #nav-bar-cont ul>li:nth-child(10)>a {
+            text-decoration: none;
+            color: #5F5F5F;
+            text-transform: uppercase;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #nav-bar-cont ul>li:nth-child(10)>a:hover {
+            color: #00c66b;
+        }
+
+        #nav-bar-cont ul>li:nth-child(10) {
+            padding-top: 22%;
+        }
+
+        #nav-bar-cont ul>li:nth-child(1) {
+            padding-top: 5%;
+        }
+
+        #switch {
+            width: 69.5%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(3):hover #switch {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -12%;
+            cursor: pointer;
+        }
+
+        #switch>div {
+            display: grid;
+            width: 100%;
+            border: 1px solid white;
+            grid-template: "one two three four";
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .switch-one,
+        .switch-four {
+            background-color: #E8F8F2;
+            box-sizing: border-box;
+            padding: 9% 12% 2% 6%;
+            text-align: left;
+            border: 1px solid #E8F8F2;
+        }
+
+        .switch-a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #174c43;
+            text-transform: uppercase;
+        }
+
+        .switch-a:hover {
+            color: #00c66b;
+        }
+
+        .switch-p {
+            margin-top: 3%;
+            color: #696A6A;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            font-weight: 600;
+            line-height: 1.5em;
+            margin-bottom: 7%;
+        }
+
+        .switch-two,
+        .switch-three {
+            background-color: white;
+            box-sizing: border-box;
+            padding: 9% 8% 2% 12%;
+            text-align: left;
+            border: 1px solid white;
+        }
+
+        .switch-two>.switch-p,
+        .switch-three>.switch-p,
+        .switch-four>.switch-p {
+            margin-bottom: 18%;
+        }
+
+        #switch-second {
+            width: 69.5%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(4):hover #switch-second {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -18.5%;
+            cursor: pointer;
+        }
+
+        #switch-second>div {
+            display: grid;
+            width: 100%;
+            border: 1px solid white;
+            grid-template: "one two three four";
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        .switch-second-one {
+            background-color: #E8F8F2;
+            box-sizing: border-box;
+            padding: 5% 12% 2% 6%;
+            text-align: left;
+            border: 1px solid #E8F8F2;
+        }
+
+        .switch-em {
+            color: #7E5F5F;
+            font-weight: 400;
+        }
+
+        .switch-second-two,
+        .switch-second-three,
+        .switch-second-four {
+            background-color: white;
+            box-sizing: border-box;
+            padding: 5% 8% 2% 12%;
+            text-align: left;
+            border: 1px solid white;
+        }
+
+        .switch-second-three,
+        .switch-second-four {
+            padding-top: 16%;
+        }
+
+        #switch-three {
+            width: 16%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(5):hover #switch-three {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -1%;
+            cursor: pointer;
+        }
+
+        #switch-three>div {
+            width: 100%;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10% 5% 10% 8%;
+            text-align: left;
+        }
+
+        #switch-three a {
+            text-transform: none;
+            color: #5F5F5F;
+            font-size: 13px;
+        }
+
+        #switch-three a:hover {
+            color: #00c66b;
+        }
+
+        #switch-four {
+            width: 16%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(6):hover #switch-four {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -1%;
+            cursor: pointer;
+        }
+
+        #switch-four>div {
+            width: 100%;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10% 5% 10% 8%;
+            text-align: left;
+        }
+
+        #switch-four a {
+            text-transform: none;
+            color: #5F5F5F;
+            font-size: 13px;
+        }
+
+        #switch-four a:hover {
+            color: #00c66b;
+        }
+
+        #switch-five {
+            width: 16%;
+            border: 1px solid white;
+            display: none;
+            box-shadow: 1px 1px 20px black;
+        }
+
+        #nav-bar-cont ul>li:nth-child(7):hover #switch-five {
+            display: block;
+            position: absolute;
+            margin-top: 1.1%;
+            margin-left: -1%;
+            cursor: pointer;
+        }
+
+        #switch-five>div {
+            width: 100%;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10% 5% 10% 8%;
+            text-align: left;
+        }
+
+        #switch-five a {
+            text-transform: none;
+            color: #5F5F5F;
+            font-size: 13px;
+        }
+
+        #switch-five a:hover {
+            color: #00c66b;
+        }
+
+        .eight-demo {
+            margin-right: 10px;
+            padding: 9px 25px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #00c66b;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #00c66b;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            cursor: pointer;
+            box-sizing: border-box;
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            text-decoration: none;
+            margin-left: 8%;
+        }
+
+
+
+        /*my css*/
+        body {
+            font-family: 'Mark simonson proxima nova', sans-serif;
+            background-color: #e8f8f2;
+        }
+
+        #leadership-cont {
+            background-image: linear-gradient(#113630, #174c43);
+            padding: 55px 0 55px 0;
+            display: block;
+            box-sizing: border-box;
+            margin-top: 60px;
+        }
+
+        .lately {
+            text-align: center;
+            color: white;
+        }
+
+        .lately h1 {
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+
+        .lately p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        #wrapper {
+            background-color: #e8f8f2;
+            box-sizing: border-box;
+        }
+
+        #bio {
+            display: grid;
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
+            grid-template-columns: 30.6% 30% 30%;
+            column-gap: 4%;
+            row-gap: 2%;
+        }
+
+        .people {
+            height: 380px;
+        }
+
+        .people div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .people div:nth-child(1) img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+        }
+
+        .people div:nth-child(2) {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            color: #174c43;
+            line-height: 30px;
+            margin-top: 14px;
+        }
+
+        .people div:nth-child(3) {
+            color: #00c66b;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .people div:nth-child(4) {
+            color: #5f5f5f;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #174c43;
+        }
+
+        @media only screen and (max-width: 1140px) {
+            #bio {
                 display: grid;
                 width: 70%;
                 margin: auto;
                 margin-top: 50px;
-                grid-template-columns: 30.6% 30% 30%;
-                column-gap: 4%;
+                grid-template-columns: 48% 48%;
+                column-gap: 2%;
                 row-gap: 2%;
             }
-            .people{
-                height: 380px;
-            }
-            .people div:nth-child(1){
-                width: 200px;
-                height: 200px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            #bio {
+                display: grid;
+                width: 70%;
                 margin: auto;
+                margin-top: 50px;
+                grid-template-columns: 98%;
+                column-gap: 2%;
+                row-gap: 2%;
             }
-            .people div:nth-child(1) img{
-                width: 200px;
-                height: 200px;
-                border-radius: 100px;
-            }
-            .people div:nth-child(2){
-                text-align: center;
-                font-size: 22px;
-                font-weight: 700;
-                color: #174c43;
-                line-height: 30px;
-                margin-top: 14px;
-            }
-            .people div:nth-child(3){
-                color: #00c66b;
-                font-size: 16px;
-                text-align: center;
-                margin-top: 2px;
-            }
-            .people div:nth-child(4){
-                color: #5f5f5f;
-                font-size: 16px;
-                line-height: 24px;
-                text-align: center;
-                margin-top: 10px;
-            }
-            a{
-                text-decoration: none;
-                color: #174c43;
-            }
-            @media only screen and (max-width: 1140px) {
-                #bio{
-                    display: grid;
-                    width: 70%;
-                    margin: auto;
-                    margin-top: 50px;
-                    grid-template-columns: 48% 48%;
-                    column-gap: 2%;
-                    row-gap: 2%;
-                }
-            }
-            @media only screen and (max-width: 700px) {
-                #bio{
-                    display: grid;
-                    width: 70%;
-                    margin: auto;
-                    margin-top: 50px;
-                    grid-template-columns: 98%;
-                    column-gap: 2%;
-                    row-gap: 2%;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div id="leadership-cont" >
-            <div class="lately" >
-                <h1>Lately Leadership (and the rest of our motley crew)</h1>
-                <p>Hi, humans. We may not have met yet but we like you already. 💚</p>
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-bar-cont">
+        <nav>
+            <ul>
+                <li>
+                    <a
+                        href="file:///C:/Users/My%20Computer/Desktop/Masai/MASAI_COURSE/UNIT-2/TEAM%20DRAS/lately/Home_Page/Home.html">
+                        <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
+                            alt="">
+                    </a>
+                </li>
+                <li></li>
+                <li>Product<select name="" id="" disabled></select>
+                    <div id="switch">
+                        <div>
+                            <div class="switch-one">
+                                <a href="#" class="switch-a">Pricing</a>
+                                <p class="switch-p">See which edition fits your business like a glove</p>
+                            </div>
+                            <div class="switch-two">
+                                <a href="#" class="switch-a">A.I. CONTENT WRITER</a>
+                                <p class="switch-p">Automatically writes and pre-tests content for your social media
+                                    programs</p>
+                                <a href="#" class="switch-a">SOCIAL ANALYTICS</a>
+                                <p class="switch-p">Informs your content strategy and make your content more engaging
+                                    with content analytics</p>
+                            </div>
+                            <div class="switch-three">
+                                <a href="#" class="switch-a">SOCIAL MEDIA MARKETING</a>
+                                <p class="switch-p">Everything you need to scale your social media marketing program</p>
+                                <a href="#" class="switch-a">SOCIAL SELLING</a>
+                                <p class="switch-p">Extend your social content across executives, sales, employees,
+                                    franchises, and more</p>
+                            </div>
+                            <div class="switch-four">
+                                <a href="#" class="switch-a">VIDEO AUTOGENERATOR</a>
+                                <p class="switch-p">Turn your company videos into bite-sized social media video clips
+                                    and social media posts</p>
+                                <a href="#" class="switch-a">PARENT ACCOUNTS</a>
+                                <p class="switch-p">Easily manage parent-child social media accounts</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>Industries <select name="" id="" disabled></select>
+                    <div id="switch-second">
+                        <div>
+                            <div class="switch-second-one">
+                                <em class="switch-em">Every Size</em> <br>
+                                <br>
+                                <a href="#" class="switch-a">GLOBAL ENTERPRISES</a>
+                                <p class="switch-p">Ensure quality social media messaging across every region, product
+                                    and brand</p>
+                                <a href="#" class="switch-a">FRANCHISES</a>
+                                <p class="switch-p">Set each franchise up for social media success</p>
+                                <a href="#" class="switch-a">SMALL BUSINESSES</a>
+                                <p class="switch-p">Grow your business with social media marketing</p>
+                            </div>
+                            <div class="switch-second-two">
+                                <em class="switch-em">Every Industry</em><br>
+                                <br>
+                                <a href="#" class="switch-a">TECHNOLOGY</a>
+                                <p class="switch-p">Scale your organic social media programs</p>
+                                <a href="#" class="switch-a">PROFESSIONAL SERVICES</a>
+                                <p class="switch-p">Attract and impress clients on social media</p>
+                                <a href="#" class="switch-a">FINANCIAL SERVICES</a>
+                                <p class="switch-p">Scale social media content publishing across agents, advisers and
+                                    brokers</p>
+                            </div>
+                            <div class="switch-second-three">
+                                <a href="#" class="switch-a">MEDIA & ENTERTAINMENT</a>
+                                <p class="switch-p">Reach and engage more viewers with social media marketing</p>
+                                <a href="#" class="switch-a">NEWS & PUBLIC AGENCIES</a>
+                                <p class="switch-p">Spread your news across social media more efficiently</p>
+                                <a href="#" class="switch-a">CONSUMER BRANDS</a>
+                                <p class="switch-p">Share your brand experience and reach new customers</p>
+                            </div>
+                            <div class="switch-second-four">
+                                <a href="#" class="switch-a">EDUCATION</a>
+                                <p class="switch-p">Scale social media across schools, departments and campuses</p>
+                                <a href="#" class="switch-a">HEALTHCARE & PHARMA</a>
+                                <p class="switch-p">Scale Your healthcare and Pharma social media programs</p>
+                                <a href="#" class="switch-a">SOCIAL MEDIA AGENCIES</a>
+                                <p class="switch-p">Scale your social media empire across more clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>Customers <select name="" id="" disabled></select>
+                    <div id="switch-three">
+                        <div>
+                            <a href="#" class="switch-a">Customers Overview</a>
+                        </div>
+                    </div>
+                </li>
+                <li>Resources <select name="" id="" disabled></select>
+                    <div id="switch-four">
+                        <div>
+                            <a href="#" class="switch-a">Lately Office Hours Signup</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Lately LIVE Videos</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">How to Position ANYTHING</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Blog</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Ebooks</a>
+                        </div>
+                    </div>
+                </li>
+                <li>Company <select name="" id="" disabled></select>
+                    <div id="switch-five">
+                        <div>
+                            <a href="#" class="switch-a">Company Overview</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Leadership</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Press & News</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Blog</a><br>
+                            <br>
+                            <br>
+                            <a href="#" class="switch-a">Contact Info</a><br>
+                        </div>
+                    </div>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#" class="eight-demo">Request a Demo</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- my code -->
+    <div id="leadership-cont">
+        <div class="lately">
+            <h1>Lately Leadership (and the rest of our motley crew)</h1>
+            <p>Hi, humans. We may not have met yet but we like you already. 💚</p>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="bio">
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/katebradley/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99db00c4ef50875b7e5_Kate.jpg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/katebradley/">Kate Chernis Bradley</a></div>
+                <div>Cofounder & CEO</div>
+                <div>A.I.-powered content creation pioneer. Former marketing agency owner with a whole lotta
+                    spreadsheets. Ex-XM rock 'n' roll dj. Copywriting savant.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/sblood/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d4d631743cb71469c_Steve.jpg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/sblood/">Steve Blood</a></div>
+                <div>Cofounder & COO</div>
+                <div>Serial entrepreneur, angel investor and former CTO. He originally talked Kate into turning her
+                    spreadsheets into software a.k.a., it’s all his fault!</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/jasondebacco/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012e4869863c372d7ccf76b_jason2-p-500.jpeg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/jasondebacco/">Jason DeBacco</a></div>
+                <div>Cofounder & CPO</div>
+                <div>Graphic and UX designer, specializing in scalable, customer-facing platforms for badass global
+                    brands you’ve def heard of. Dachshund enthusiast. </div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/briansirkia/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d387ffcef80d8a887_Brian.jpg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/briansirkia/">Brian Sirkia</a></div>
+                <div>Cofounder & CTO</div>
+                <div>Serial entrepreneur. Full-stack engineer. Calm in the storm. Kate’s fave guy to have a beer with
+                    EVER. Plus his cat is named Bruce.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/greghamel/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d4d6317835171469b_Greg.jpg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/greghamel/">Greg Hamel</a></div>
+                <div>VP of Engineering</div>
+                <div>Full-stack engineer and former CTO. Backend architecture, development and implementation. Sanity
+                    keeper. Hero. Heavy metal drummer.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/laurenturow/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99ec386c51d19f51306_Lauren-p-500.jpeg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/laurenturow/">Lauren Turow</a></div>
+                <div>Head of Growth</div>
+                <div>Sales and customer success lead. Masters in psychology. Expert tie-dye artist. French pastry baking
+                    queen. Shares a brain with Kate.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/chris-bro-b620a56/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012b32371fbb12bd4c5ad68_breault.png"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/chris-bro-b620a56/">Chris Breault</a></div>
+                <div>Customer Experience Account Executive</div>
+                <div>Award-winning music curator and rock ‘n’ roll podcast host. Soccer beast. Craft beer aficionado.
+                    Kate and Chris go waaaaay back.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/ankit-srinivas/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012e7d6b78f3f840808107c_ankit2-p-500.png"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/ankit-srinivas/">Ankit Srinivas</a></div>
+                <div>Marketing Partnerships Associate</div>
+                <div>SaaS Swiss Army knife (marketing, product, customer success, sales). Digs a mean BBQ. Dog-lover.
+                    Also no stranger to radio.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://scholar.google.com/citations?user=P8WKqa4AAAAJ&hl=en"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012eb6878bc1c3a4b4c4f16_kaigui2.png"></a>
+                </div>
+                <div><a href="https://scholar.google.com/citations?user=P8WKqa4AAAAJ&hl=en">Dr. Kaigui Bian</a></div>
+                <div>A.I. Lead</div>
+                <div>Network Computing Assoc. Professor/Director. Computer Science Asst. Chair, EECS Peking University.
+                    Obvi smarter than the rest of us.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/kristen-shedd-7b9b65202/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea32d36cd40181fcc06_ab-p-500.jpeg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/kristen-shedd-7b9b65202/">Kristen Shedd</a></div>
+                <div>Customer Success Manager</div>
+                <div>Seasoned customer service ninja. Problem solver. Sales, retention, community building. Downhill
+                    skiing doyenne. Infectious laugh.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/cadijordan/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600a12640a4a1b435f05fd28_T048XPPQD-U9MSWP49L-e924321d2fe5-512-p-500.png"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/cadijordan/">Cadi Jordan</a></div>
+                <div>Social Media Engagement Lead</div>
+                <div>Connectorpreneur. Marketing and social media strategist. Social selling lead-generation. Empath.
+                    Fave game: Two Truths and a Lie.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/alexandra-wieser/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea1b737499f777f78aa_aa.jpeg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/alexandra-wieser/">Alex Wieser</a></div>
+                <div>Social Media Advisor</div>
+                <div>Copywriting whippersnapper. Digital marketing persona development. Longest serving employee! Her
+                    King Charles Cavalier is supah-cute.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/isabel-refford/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012efcab78f3fce28083ef2_isabel1-p-500.png"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/isabel-refford/">Isabel Refford</a></div>
+                <div>Intern Extraordinaire</div>
+                <div>Research, data collection, marketing, copywriting... Plus all the annoying tasks none of us wants
+                    to do. And she does them with a MEGAWATT smile.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/peter-schweinfurth-6063a46/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea1f3cc2746855c84e8_ad.jpeg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/peter-schweinfurth-6063a46/">Peter Schweinfurth</a></div>
+                <div>Acting CFO & Board Member</div>
+                <div>Private equity, hedge fund and startup advisor. VC. Harvard Business School Alumni Angels Member
+                    and multi-deal lead. Taco fanatic (like Kate).</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/judyloehr/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea3a7a22a3948ad971a_ae-p-500.jpeg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/judyloehr/">Judy Loehr</a></div>
+                <div>Product & Partnerships Advisor</div>
+                <div>SaaS tech veteran (Salesforce + a loooong list of others). Early product build and GTM specialist.
+                    VC. Champion of rad female founders.</div>
+            </div>
+            <div class="people">
+                <div><a href="https://www.linkedin.com/in/davidmeermanscott/"><img
+                            src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/602c0a9825089663e017a552_1517478331461.jpeg"></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/davidmeermanscott/">David Merman Scott</a></div>
+                <div>Strategic Marketing Advisor</div>
+                <div>Marketing humdinger. Joyful insouciant. The New Rules of Marketing and PR author (yep, THAT guy).
+                    Grateful Dead superfan.</div>
             </div>
         </div>
-        <div id="wrapper" >
-            <div id="bio" >
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/katebradley/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99db00c4ef50875b7e5_Kate.jpg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/katebradley/">Kate Chernis Bradley</a></div>
-                    <div>Cofounder & CEO</div>
-                    <div>A.I.-powered content creation pioneer. Former marketing agency owner with a whole lotta spreadsheets. Ex-XM rock 'n' roll dj. Copywriting savant.</div>
-                </div> 
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/sblood/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d4d631743cb71469c_Steve.jpg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/sblood/">Steve Blood</a></div>
-                    <div>Cofounder & COO</div>
-                    <div>Serial entrepreneur, angel investor and former CTO. He originally talked Kate into turning her spreadsheets into software a.k.a., it’s all his fault!</div>
-                </div> 
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/jasondebacco/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012e4869863c372d7ccf76b_jason2-p-500.jpeg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/jasondebacco/">Jason DeBacco</a></div>
-                    <div>Cofounder & CPO</div>
-                    <div>Graphic and UX designer, specializing in scalable, customer-facing platforms for badass global brands you’ve def heard of. Dachshund enthusiast. </div>
-                </div> 
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/briansirkia/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d387ffcef80d8a887_Brian.jpg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/briansirkia/">Brian Sirkia</a></div>
-                    <div>Cofounder & CTO</div>
-                    <div>Serial entrepreneur. Full-stack engineer. Calm in the storm. Kate’s fave guy to have a beer with EVER. Plus his cat is named Bruce.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/greghamel/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99d4d6317835171469b_Greg.jpg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/greghamel/">Greg Hamel</a></div>
-                    <div>VP of Engineering</div>
-                    <div>Full-stack engineer and former CTO. Backend architecture, development and implementation. Sanity keeper. Hero. Heavy metal drummer.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/laurenturow/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5ffca99ec386c51d19f51306_Lauren-p-500.jpeg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/laurenturow/">Lauren Turow</a></div>
-                    <div>Head of Growth</div>
-                    <div>Sales and customer success lead. Masters in psychology. Expert tie-dye artist. French pastry baking queen. Shares a brain with Kate.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/chris-bro-b620a56/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012b32371fbb12bd4c5ad68_breault.png"></a></div>
-                    <div><a href="https://www.linkedin.com/in/chris-bro-b620a56/">Chris Breault</a></div>
-                    <div>Customer Experience Account Executive</div>
-                    <div>Award-winning music curator and rock ‘n’ roll podcast host. Soccer beast. Craft beer aficionado. Kate and Chris go waaaaay back.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/ankit-srinivas/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012e7d6b78f3f840808107c_ankit2-p-500.png"></a></div>
-                    <div><a href="https://www.linkedin.com/in/ankit-srinivas/">Ankit Srinivas</a></div>
-                    <div>Marketing Partnerships Associate</div>
-                    <div>SaaS Swiss Army knife (marketing, product, customer success, sales). Digs a mean BBQ. Dog-lover. Also no stranger to radio.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://scholar.google.com/citations?user=P8WKqa4AAAAJ&hl=en"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012eb6878bc1c3a4b4c4f16_kaigui2.png"></a></div>
-                    <div><a href="https://scholar.google.com/citations?user=P8WKqa4AAAAJ&hl=en">Dr. Kaigui Bian</a></div>
-                    <div>A.I. Lead</div>
-                    <div>Network Computing Assoc. Professor/Director. Computer Science Asst. Chair, EECS Peking University. Obvi smarter than the rest of us.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/kristen-shedd-7b9b65202/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea32d36cd40181fcc06_ab-p-500.jpeg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/kristen-shedd-7b9b65202/">Kristen Shedd</a></div>
-                    <div>Customer Success Manager</div>
-                    <div>Seasoned customer service ninja. Problem solver. Sales, retention, community building. Downhill skiing doyenne. Infectious laugh.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/cadijordan/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/600a12640a4a1b435f05fd28_T048XPPQD-U9MSWP49L-e924321d2fe5-512-p-500.png"></a></div>
-                    <div><a href="https://www.linkedin.com/in/cadijordan/">Cadi Jordan</a></div>
-                    <div>Social Media Engagement Lead</div>
-                    <div>Connectorpreneur. Marketing and social media strategist. Social selling lead-generation. Empath. Fave game: Two Truths and a Lie.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/alexandra-wieser/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea1b737499f777f78aa_aa.jpeg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/alexandra-wieser/">Alex Wieser</a></div>
-                    <div>Social Media Advisor</div>
-                    <div>Copywriting whippersnapper. Digital marketing persona development. Longest serving employee! Her King Charles Cavalier is supah-cute.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/isabel-refford/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6012efcab78f3fce28083ef2_isabel1-p-500.png"></a></div>
-                    <div><a href="https://www.linkedin.com/in/isabel-refford/">Isabel Refford</a></div>
-                    <div>Intern Extraordinaire</div>
-                    <div>Research, data collection, marketing, copywriting... Plus all the annoying tasks none of us wants to do. And she does them with a MEGAWATT smile.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/peter-schweinfurth-6063a46/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea1f3cc2746855c84e8_ad.jpeg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/peter-schweinfurth-6063a46/">Peter Schweinfurth</a></div>
-                    <div>Acting CFO & Board Member</div>
-                    <div>Private equity, hedge fund and startup advisor. VC. Harvard Business School Alumni Angels Member and multi-deal lead. Taco fanatic (like Kate).</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/judyloehr/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/6011aea3a7a22a3948ad971a_ae-p-500.jpeg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/judyloehr/">Judy Loehr</a></div>
-                    <div>Product & Partnerships Advisor</div>
-                    <div>SaaS tech veteran (Salesforce + a loooong list of others). Early product build and GTM specialist. VC. Champion of rad female founders.</div>
-                </div>
-                <div class="people">
-                    <div><a href="https://www.linkedin.com/in/davidmeermanscott/"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/602c0a9825089663e017a552_1517478331461.jpeg"></a></div>
-                    <div><a href="https://www.linkedin.com/in/davidmeermanscott/">David Merman Scott</a></div>
-                    <div>Strategic Marketing Advisor</div>
-                    <div>Marketing humdinger. Joyful insouciant. The New Rules of Marketing and PR author (yep, THAT guy). Grateful Dead superfan.</div>
-                </div>
-            </div>   
-        </div>
-        <script>
+    </div>
 
-        </script>
-    </body>
+
+    <!-- footer -->
+
+
+    <div id="footer">
+        <div class="footer-sub-cont">
+            <div class="box-1">
+                <h5 class="h5">Company</h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/company/company-overview" class="footer-link">Company Overview</a>
+                    </li>
+                    <li class="list">
+                        <a href="/company/leadership" class="footer-link">Leadership</a>
+                    </li>
+                    <li class="list">
+                        <a href="/customers/customer-stories" class="footer-link">Customers</a>
+                    </li>
+                    <li class="list">
+                        <a href="/company/press" class="footer-link">Press & News</a>
+                    </li>
+                    <li class="list">
+                        <a href="/company/contact" class="footer-link">Contact Info</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-2">
+                <h5 class="h5">PRODUCT</h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/product/lately-social-media-ai-content-platform" class="footer-link">Product
+                            Overview</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-media-content-writing-ai-software-solution" class="footer-link">A.I.
+                            Social Content Writer</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-media-marketing-ai-software-solution" class="footer-link">Social Media
+                            Marketing</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-selling-ai-software-solution" class="footer-link">Social Selling</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/social-media-content-analytics-software" class="footer-link">Social Media
+                            Analytics</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.trylately.com/social-post-autogenerator" class="footer-link">Sample A.I.
+                            Autogenerator</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://chrome.google.com/webstore/detail/generate-to-lately/bcghcdjbnjhbpokejekampjgnhchcapl?hl=en"
+                            target="_blank" class="footer-link">Autogenerator Chrome Extension</a>
+                    </li>
+                    <li class="list">
+                        <a href="/product/parent-child-accounts" class="footer-link">Parent Accounts</a>
+                    </li>
+                </ul>
+                <h5 class="h5">
+                    <a href="/pricing/lately-pricing" class="link">Pricing</a>
+                </h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/pricing/pricing-for-social-media-savvy-individuals" class="footer-link">Social Animal
+                            Edition</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="footer-link">Social Marketing Edition</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="footer-link">Social Enterprise Edition</a>
+                    </li>
+                    <li class="list">
+                        <a href="#" class="footer-link">Social Agency Edition</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-3">
+                <h5 class="h5">resources</h5>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/resources/ebooks" class="footer-link">Ebooks</a>
+                    </li>
+                    <li class="list">
+                        <a href="/resources/blog" class="footer-link">Blog</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://helpcenter.trylately.com/hc/en-us" class="footer-link">Help Center</a>
+                    </li>
+                </ul>
+                <div>Lately Office Hours</div>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/resources/lately-live-videos" class="footer-link">Lately LIVE Videos</a>
+                    </li>
+                    <li class="list">
+                        <a href="/resources/how-to-position-anything" class="footer-link">How to Position ANYTHING</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://zoom.us/webinar/register/WN_7_ObcIwKRja8jF1ahuSOVQ" class="footer-link">Lately
+                            101</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.youtube.com/c/LatelyAI/videos" class="footer-link">Video Tutorials</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-4">
+                <h5 class="h5">industries</h5>
+                <div>Every Size</div>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/industries/enterprise-social-content-management-software-for-global-companies"
+                            class="footer-link">Global Enterprises</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/distributed-social-media-solutions-for-franchises"
+                            class="footer-link">Franchises</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-tools-for-small-businesses"
+                            class="footer-link">Small Businesses</a>
+                    </li>
+                </ul>
+                <div>Every Industry</div>
+                <ul role="list" class="ul">
+                    <li class="list">
+                        <a href="/industries/organic-social-media-program-solutions-for-tech-companies"
+                            class="footer-link">Technology</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-selling-platform-for-professional-services-firms"
+                            class="footer-link">Professional Services</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/compliant-social-media-content-for-financial-services-agents-advisers-brokers"
+                            class="footer-link">Financial Services</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-products-for-media-and-entertainment-companies"
+                            class="footer-link">Media & Entertainment</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-applications-for-news-and-public-information-agencies"
+                            class="footer-link">News & Public Agencies</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-marketing-platform-for-consumer-brands-and-b2c"
+                            class="footer-link">Consumer Brands</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-tools-schools-and-universities"
+                            class="footer-link">Education</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-products-healthcare-pharma" class="footer-link">Healthcare &
+                            Pharma</a>
+                    </li>
+                    <li class="list">
+                        <a href="/industries/social-media-agency-ai-software" class="footer-link">Social Media
+                            Agencies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="ninth-logo-cont">
+        <div>
+            <div class="logo-one">
+                <a href="http://127.0.0.1:5500/Home.html">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7e81a75428f60b5ff0d00_lately-footer-logo.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="empty"></div>
+            <div class="logo-two">
+                <a href="https://www.facebook.com/LatelyAI/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98ca57d5a01f8b06ac_lately-footer-facebook-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-three">
+                <a href="https://twitter.com/LatelyAI">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98d033dccb4e0c5c8a_lately-footer-twitter-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-four">
+                <a href="https://www.linkedin.com/company/latelyai/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98a46fb9298adb10cf_lately-footer-linkedin-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-five">
+                <a href="https://www.instagram.com/LatelyAI/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea981e42d6cdd21dc804_lately-footer-instagram-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-six">
+                <a href="https://www.youtube.com/LatelyAI">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98d97acfb972a65b4a_lately-footer-youtube-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-seven">
+                <a href="https://www.tiktok.com/@latelyai">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/60199af29cf48909018c3acc_social_tiktok_grey.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-eight">
+                <a href="https://lately.slack.com/">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98876e67fbe9ce343b_lately-footer-slack-icon.svg"
+                        alt="">
+                </a>
+            </div>
+            <div class="logo-nine">
+                <a href="https://lately.activehosted.com/f/1">
+                    <img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd7ea98852e65824bc54cf9_lately-footer-email-icon.svg"
+                        alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="last-main-cont">
+        <div class="last-sub-cont">
+            <div class="last-left">
+                <a href="https://www.lately.ai/terms">Terms
+                    ●
+                </a>
+                <a href="https://www.lately.ai/privacy">Privacy
+                </a>
+            </div>
+            <div class="last-right">
+                <p>Copyright © 2021 Lately, Inc. Stone Ridge, NY, USA</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
 </html>
