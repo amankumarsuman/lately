@@ -4,7 +4,7 @@
 }
 
 #first-main-cont {
-    width: 1519.2px;
+    width: 100%;
     height: 466.175px;
     background-color: #174C43;
     padding: 60px 15% 60px 15%;
@@ -101,7 +101,7 @@ border: 1px solid #174C43;;
 }
 
 #logo-cont {
-    width: 1519.2px;
+    width: 100%;
     border: 1px solid white;
     display: block;
     box-sizing: border-box;
@@ -129,7 +129,7 @@ border: 1px solid #174C43;;
 }
 
 #third-main-cont {
-    width: 1519.2px;
+    width: 100%;
     background-color: #E8F8F2;
     padding: 30px 15% 10px 15%;
     display: block;
@@ -197,7 +197,7 @@ border: 1px solid #174C43;;
     background-color: #fff;
     display: block;
     box-sizing: border-box;
-    width: 1519.2px;
+    width: 100%;
     border: 1px solid white;
 }
 
@@ -294,7 +294,7 @@ border: 1px solid #174C43;;
 }
 
 #fifth-main-cont {
-    width: 1519.2px;
+    width: 100%;
     background-color: #E8F8F2;
     padding: 7% 15% 7% 15%;
     display: block;
@@ -348,7 +348,7 @@ border: 1px solid #174C43;;
 }
 
 #sixth-main-div {
-    width: 1519.2px;
+    width: 100%;
     background-color: #174C43;
     padding: 1.5% 15% 4% 15%;
     display: block;
@@ -472,7 +472,7 @@ border: 1px solid #174C43;;
 }
 
 #seventh-main-cont {
-    width: 1519.2px;
+    width: 100%;
     background-color: white;
     padding: 35px 15% 60px 15%;
     display: block;
@@ -592,7 +592,7 @@ border: 1px solid #174C43;;
 }
 
 #eight-main-cont {
-    width: 1519.2px;
+    width: 100%;
     height: 466px;
     padding: 64px 15% 64px 15%;
     background-color: #e6f6ef;
@@ -619,16 +619,21 @@ border: 1px solid #174C43;;
     border: 1px solid black;
     height: 42vh;
     box-shadow: 1px 1px 20px;
+    border: hidden;
+    border-radius: 1em;
 }
 
 .eight-right-box {
     grid-area: rightbox;
     border: 1px solid #e6f6ef;
+    border: hidden;
 }
 
 .eight-left-box > iframe {
     width: 100%;
     height: 100%;
+    border: hidden;
+    border-radius: 1em;
 }
 
 .eight-right-box > h1 {
@@ -707,7 +712,7 @@ color: white;
 
 
 #footer {
-    width: 1519.2px;
+    width: 100%;
     background-color: white;
     padding: 30px 15% 30px 15%;
     display: block;
@@ -836,7 +841,7 @@ color: white;
 }
 
 #ninth-logo-cont {
-    width: 1519.2px;
+    width: 100%;
     background-color: white;
     padding: 0px 15% 0px 15%;
     display: block;
@@ -922,7 +927,7 @@ color: white;
 }
 
 #nav-bar-cont {
-    width: 1519.2px;
+    width: 100%;
     padding: 0px 15% 0px 15%;
     display: block;
     box-sizing: border-box;
@@ -1006,6 +1011,8 @@ color: white;
     border: 1px solid white;
     display: none;
     box-shadow: 1px 1px 20px black;
+    border-radius: 1em;
+    border: hidden;
 }
 
 #nav-bar-cont ul > li:nth-child(3):hover #switch{
@@ -1022,6 +1029,7 @@ color: white;
     border: 1px solid white;
     grid-template: "one two three four";
     grid-template-columns: 25% 25% 25% 25%;
+    border: hidden;
 }
 
 .switch-one, .switch-four {
@@ -1030,6 +1038,17 @@ color: white;
     padding: 9% 12% 2% 6%;
     text-align: left;
     border: 1px solid #E8F8F2;
+    border: hidden;
+}
+
+.switch-one {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.switch-four {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .switch-a {
@@ -1070,6 +1089,8 @@ color: white;
     border: 1px solid white;
     display: none;
     box-shadow: 1px 1px 20px black;
+    border-radius: 1em;
+    border: hidden;
 }
 
 #nav-bar-cont ul > li:nth-child(4):hover #switch-second {
@@ -1086,6 +1107,7 @@ color: white;
     border: 1px solid white;
     grid-template: "one two three four";
     grid-template-columns: 25% 25% 25% 25%;
+    border: hidden;
 }
 
 .switch-second-one {
@@ -1094,6 +1116,9 @@ color: white;
     padding: 5% 12% 2% 6%;
     text-align: left;
     border: 1px solid #E8F8F2;
+    border: hidden;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
 }
 
 .switch-em {
@@ -1107,10 +1132,16 @@ color: white;
     padding: 5% 8% 2% 12%;
     text-align: left;
     border: 1px solid white;
+    border: hidden;
 }
 
 .switch-second-three, .switch-second-four {
     padding-top: 16%;
+}
+
+.switch-second-four {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 #switch-three {
@@ -1118,6 +1149,8 @@ color: white;
     border: 1px solid white;
     display: none;
     box-shadow: 1px 1px 20px black;
+    border: hidden;
+    border-radius: 1em;
 }
 
 #nav-bar-cont ul > li:nth-child(5):hover #switch-three {
@@ -1134,6 +1167,8 @@ color: white;
     background-color: white;
     padding: 10% 5% 10% 8%;
     text-align: left;
+    border: hidden;
+    border-radius: 1em;
 }
 
 #switch-three a {
@@ -1151,6 +1186,8 @@ color: white;
     border: 1px solid white;
     display: none;
     box-shadow: 1px 1px 20px black;
+    border: hidden;
+    border-radius: 1em;
 }
 
 #nav-bar-cont ul > li:nth-child(6):hover #switch-four {
@@ -1167,6 +1204,8 @@ color: white;
     background-color: white;
     padding: 10% 5% 10% 8%;
     text-align: left;
+    border: hidden;
+    border-radius: 1em;
 }
 
 #switch-four a {
@@ -1184,6 +1223,8 @@ color: white;
     border: 1px solid white;
     display: none;
     box-shadow: 1px 1px 20px black;
+    border: hidden;
+    border-radius: 1em;
 }
 
 #nav-bar-cont ul > li:nth-child(7):hover #switch-five {
@@ -1200,6 +1241,8 @@ color: white;
     background-color: white;
     padding: 10% 5% 10% 8%;
     text-align: left;
+    border: hidden;
+    border-radius: 1em;
 }
 
 #switch-five a {
@@ -1213,7 +1256,7 @@ color: white;
 }
 
 #last-main-cont {
-    width: 1519.2px;
+    width: 100%;
     background-color: #174C43;
     padding: 30px 15% 30px 15%;
     display: block;
